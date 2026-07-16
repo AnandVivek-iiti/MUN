@@ -46,7 +46,7 @@ const SecretariatSection = ({ title, members }) => {
                 key={index}
                 name={member.name.trim()}
                 position={member.position}
-                imageSrc={`/members/${member.team}/${member.name.trim()}.jpg`}
+                imageSrc={`/members/Secratrist/${member.image}`}
                 email={member.email}
                 linkedin={member.linkedin}
                 instagram={member.instagram}

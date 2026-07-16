@@ -25,7 +25,7 @@ export function MunEdition() {
               ease: "easeInOut",
             }}
           >
-            MUN IITI 9.0
+            MUN IITI 10.0
           </motion.h2>
           <motion.div
             className="w-24 h-1 bg-gradient-to-r from-[#00ffff] to-transparent mx-auto mb-8"
@@ -56,7 +56,7 @@ export function MunEdition() {
               </p>
               <p>
                 With distinguished chief guest ,enhanched training session , and networking opportunities, MUN IITI
-                9.0 promises an unparalleled platform for developing leadership skills and forging lasting connections.
+                10.0 promises an unparalleled platform for developing leadership skills and forging lasting connections.
               </p>
             </div>
 
@@ -106,7 +106,7 @@ export function MunEdition() {
               >
                 <img
                   src="/mun-edition.jpg"
-                  alt="MUN IITI 9.0"
+                  alt="MUN IITI 10.0"
                   width={800}
                   height={600}
                   className="w-full h-auto object-cover rounded-2xl transition-all duration-500 group-hover:brightness-110"
@@ -151,7 +151,7 @@ export function MunEdition() {
                     transition: { duration: 0.8 },
                   }}
                 >
-                  <span className="text-black text-3xl font-bold">9.0</span>
+                  <span className="text-black text-3xl font-bold">10.0</span>
                 </motion.div>
               </motion.div>
             </div>

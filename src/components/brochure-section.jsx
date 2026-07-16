@@ -12,7 +12,7 @@ export function BrochureSection() {
     // Trigger file download
     const link = document.createElement("a");
     link.href = "/brochure.pdf"; 
-    link.download = "IITIMUN 9.0 Brochure.pdf";
+    link.download = "IITIMUN 10.0 Brochure.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

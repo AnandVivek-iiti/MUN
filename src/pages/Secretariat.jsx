@@ -15,61 +15,41 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Secretariat = () => {
   const cheifs = secretariat.filter((member) => member.position === "Chief");
-
-  const corporate = secretariat.filter(
-    (member) =>
-      member.team === "Corporate Relations" &&
-      member.position === "SECRETARIAT"
-  );
-
-  const creatives = secretariat.filter(
-    (member) =>
-      member.team === "Creatives and Social Media" &&
-      member.position === "SECRETARIAT"
-  );
-
-  const delegate = secretariat.filter(
-    (member) =>
-      member.team === "Delegate Affairs" && member.position === "SECRETARIAT"
-  );
-
-  const executive = secretariat.filter(
-    (member) =>
-      member.team === "Executive Board" && member.position === "SECRETARIAT"
-  );
-
-  const marketing = secretariat.filter(
-    (member) =>
-      member.team === "Marketing and Outreach" &&
-      member.position === "SECRETARIAT"
-  );
-
-  const public_affairs = secretariat.filter(
-    (member) =>
-      member.team === "Public Affairs" && member.position === "SECRETARIAT"
-  );
-
-  const technical = secretariat.filter(
-    (member) =>
-      member.team === "Technical Affairs" && member.position === "SECRETARIAT"
-  );
-
-  const video = secretariat.filter(
-    (member) =>
-      member.team === "Video Production" && member.position === "SECRETARIAT"
-  );
-
-  const web = secretariat.filter(
-    (member) =>
-      member.team === "Web and IT Operations" &&
-      member.position === "SECRETARIAT"
-  );
-
   const heads = secretariat.filter(
     (member) =>
       member.position === "Director General" ||
       member.position === "Secretary General"
   );
+  const corporate = secretariat.filter(
+    (m) => m.team === "Corporate Relations" && m.position === "USG"
+  );
+
+  const creatives = secretariat.filter(
+    (m) => m.team === "Creatives and Social Media" && m.position === "USG"
+  );
+
+  const delegate = secretariat.filter(
+    (m) => m.team === "Delegate Affairs" && m.position === "USG"
+  );
+
+  const executive = secretariat.filter(
+    (m) => m.team === "Executive Board" && m.position === "USG"
+  );
+
+  const operations = secretariat.filter(
+    (m) => m.team === "Operations" && m.position === "USG"
+  );
+
+  const publicRelations = secretariat.filter(
+    (m) => m.team === "Public Relations" && m.position === "USG"
+  );
+
+  const video = secretariat.filter(
+    (m) => m.team === "Video Production" && m.position === "USG"
+  );
+  const web = secretariat.filter(
+    (m)=> m.team === "Operations" && m.position === "Web Dev Coordinator"
+  )
 
   return (
     <div className="relative">
@@ -79,7 +59,7 @@ const Secretariat = () => {
 
       <PageHeader
         title="The Squad"
-        subtitle="Meet the incredible humans making MUN 9.0 absolutely legendary!"
+        subtitle="Meet the incredible humans making MUN 10.0 absolutely legendary!"
       />
 
       {/* Director General & Secretary General Section */}
@@ -116,7 +96,7 @@ const Secretariat = () => {
               viewport={{ once: true }}
             />
             <p className="text-gray-300 text-lg">
-              The visionaries leading MUN IIT Indore 9.0 with excellence and
+              The visionaries leading MUN IIT Indore 10.0 with excellence and
               passion.
             </p>
           </motion.div>
@@ -127,7 +107,7 @@ const Secretariat = () => {
                 key={index}
                 name={member.name.trim()}
                 position={member.position}
-                imageSrc={`/members/${member.team}/${member.name.trim()}.jpg`}
+                imageSrc={`/members/Secratrist/${member.image}`}
                 email={member.email}
                 linkedin={member.linkedin}
                 instagram={member.instagram}
@@ -184,7 +164,7 @@ const Secretariat = () => {
                   key={index}
                   name={member.name.trim()}
                   position={member.team}
-                  imageSrc={`/members/${member.team}/${member.name.trim()}.jpg`}
+                  imageSrc={`/members/Secratrist/${member.image}`}
                   email={member.email}
                   linkedin={member.linkedin}
                   instagram={member.instagram}
@@ -196,18 +176,14 @@ const Secretariat = () => {
       </section>
 
       {/* Department Sections */}
-      <SecretariatSection title={"Corporate Relations"} members={corporate} />
-      <SecretariatSection
-        title={"Creative and Social Media"}
-        members={creatives}
-      />
-      <SecretariatSection title={"Delegate Affairs"} members={delegate} />
-      <SecretariatSection title={"Executive Board"} members={executive} />
-      
-      <SecretariatSection title={"Public Affairs"} members={public_affairs} />
-      <SecretariatSection title={"Technical Affairs"} members={technical} />
-      <SecretariatSection title={"Video Production"} members={video} />
-      <SecretariatSection title={"Web and IT Operations"} members={web} />
+      <SecretariatSection title="Corporate Relations" members={corporate} />
+      <SecretariatSection title="Creatives and Social Media" members={creatives} />
+      <SecretariatSection title="Delegate Affairs" members={delegate} />
+      <SecretariatSection title="Executive Board" members={executive} />
+      <SecretariatSection title="Operations" members={operations} />
+      <SecretariatSection title="Public Relations" members={publicRelations} />
+      <SecretariatSection title="Video Production" members={video} />
+      <SecretariatSection title="Web Development" members={web}/>
     </div>
   );
 };

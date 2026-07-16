@@ -46,7 +46,7 @@ const InfoCards = () => {
       title: "Venue",
       subtitle: "IIT Indore Campus",
       description:
-        "Join us at the heart of innovation for MUN 9.0 — IIT Indore.",
+        "Join us at the heart of innovation for MUN 10.0 — IIT Indore.",
       details: [
         {
           location: "Book a Cab",
@@ -144,9 +144,9 @@ const InfoCards = () => {
       id: 3,
       title: "Important Dates",
       subtitle: "Mark Your Calendars",
-      description: "Keep track of the milestones of MUN 9.0 at IIT Indore.",
+      description: "Keep track of the milestones of MUN 10.0 at IIT Indore.",
       details: [
-        { date: "2 January 2026", event: "Day 1: MUN 9.0 Opening Ceremony" },
+        { date: "2 January 2026", event: "Day 1: MUN 10.0 Opening Ceremony" },
         { date: "3 January 2026", event: "Day 2:Traditional Day" },
         { date: "4 January 2026", event: "Day 3: Closing Ceremony" },
       ],

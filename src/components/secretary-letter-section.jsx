@@ -107,7 +107,7 @@ export function SecretaryLetterSection() {
                 debate.
               </p>
               <p>
-                The Secretariat has worked tirelessly to ensure that MUN IIT Indore 9.0 not only mirrors the authenticity
+                The Secretariat has worked tirelessly to ensure that MUN IIT Indore 10.0 not only mirrors the authenticity
                 of real-world diplomacy but also fosters collaboration, critical thinking, and respect for differing
                 opinions. We believe that every delegate, regardless of experience, brings a unique voice that adds
                 value to the conversation.
@@ -123,7 +123,7 @@ export function SecretaryLetterSection() {
                 celebration of ideas and unity.
               </p>
               <p>
-                On behalf of the entire Secretariat, I warmly welcome you to <strong>MUN IIT Indore 9.0</strong>. May this
+                On behalf of the entire Secretariat, I warmly welcome you to <strong>MUN IIT Indore 10.0</strong>. May this
                 edition inspire meaningful dialogue, lasting friendships, and a deeper sense of purpose.
               </p>
               <p>
@@ -131,7 +131,7 @@ export function SecretaryLetterSection() {
                 <br />
                 <span className="text-[#00ffff] font-bold text-xl">Sharik Mansoori</span>
                 <br />
-                <span className="text-[#00ffff]/80 italic">Secretary-General, MUN IIT Indore 9.0</span>
+                <span className="text-[#00ffff]/80 italic">Secretary-General, MUN IIT Indore 10.0</span>
                 <span className="text-[#00ffff] text-3xl font-serif">"</span>
               </p>
             </div>

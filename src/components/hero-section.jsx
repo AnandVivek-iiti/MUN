@@ -208,10 +208,10 @@ export function HeroSection() {
                   },
                 }}
               >
-                MUN IITI 9.0
+                MUN IITI 10.0
               </motion.span>
               <span className="relative bg-gradient-to-r from-[#00ffff] via-white to-[#00ffff] bg-clip-text text-transparent">
-                MUN IITI 9.0
+                MUN IITI 10.0
               </span>
             </motion.h1>
             <motion.div

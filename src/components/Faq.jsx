@@ -9,9 +9,9 @@ const Faq = () => {
   const faqs = [
   {
     id: 1,
-    question: "Who can participate in IIT Indore MUN 9.0?",
+    question: "Who can participate in IIT Indore MUN 10.0?",
     answer:
-      "IIT Indore MUN 9.0 is open to school and university students from across India and abroad. We welcome both first-time delegates and experienced MUNners who wish to engage in intellectually driven and well-structured debate.",
+      "IIT Indore MUN 10.0 is open to school and university students from across India and abroad. We welcome both first-time delegates and experienced MUNners who wish to engage in intellectually driven and well-structured debate.",
     category: "Eligibility",
     icon: "🧑‍🎓",
   },
@@ -19,7 +19,7 @@ const Faq = () => {
     id: 2,
     question: "Is the conference being held online or offline?",
     answer:
-      "IIT Indore MUN 9.0 will feature 8 offline committees hosted on the IIT Indore campus.",
+      "IIT Indore MUN 10.0 will feature 8 offline committees hosted on the IIT Indore campus.",
     category: "Format",
     icon: "💻",
   },
@@ -65,7 +65,7 @@ const Faq = () => {
   },
   {
     id: 8,
-    question: "How do I register for IIT Indore MUN 9.0?",
+    question: "How do I register for IIT Indore MUN 10.0?",
     answer:
       "Registrations are being conducted through our official website of MUN IITI. Delegates can visit the official MUN IITI website, complete the registration and payment process there.",
     category: "Registration",
@@ -246,7 +246,7 @@ const Faq = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Find answers to common questions about Model United Nation 9.0
+            Find answers to common questions about Model United Nation 10.0
           </motion.p>
         </motion.div>
 

@@ -88,7 +88,7 @@ const WhyUs = () => {
       
       <PageHeader
         title="Why Us"
-        subtitle="Why choose MUN 9.0 IIT Indore?"
+        subtitle="Why choose MUN 10.0 IIT Indore?"
       />
 
       <section className="py-20 px-4 relative overflow-hidden">

@@ -71,7 +71,7 @@ const Spinner = () => {
             ease: "easeInOut",
           }}
         >
-          MUN 9.0 IITI
+          MUN 10.0 IITI
         </motion.h1>
 
         <motion.p
