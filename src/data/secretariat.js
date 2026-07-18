@@ -105,7 +105,7 @@ export const secretariat = [
   },
   {
     name: "Anshu Yadav",
-    image: "Anshu Yadav.jpeg",
+    image: "Anshu Yadav.jpg",
     team: "Corporate Relations",
     position: "USG",
     instagram: "https://www.instagram.com/_anshuydv25/",
