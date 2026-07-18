@@ -329,7 +329,7 @@ export const secretariat = [
   },
   {
     name: "Chetna Mundra",
-    image: "Chetna Mundra.jpeg",
+    image: "Chetna.jpg",
     team: "Operations",
     position: "USG",
     instagram: null,
