@@ -17,7 +17,7 @@ export const secretariat = [
   },
   {
     name: "Parv Khandelwal",
-    image: "Parv Khandelwal.jpg",
+    image: "parv.png",
     team: "Operations",
     position: "USG",
     instagram: null,
@@ -65,7 +65,7 @@ export const secretariat = [
   },
   {
     name: "Vishruth Agrawal",
-    image: "Vishruth Agrawal.jpg",
+    image: "Vishruth Agrawal.png",
     team: "Delegate Affairs",
     position: "USG",
     instagram: null,
@@ -105,7 +105,7 @@ export const secretariat = [
   },
   {
     name: "Anshu Yadav",
-    image: "Anshu Yadav.jpg",
+    image: "Anshu Yadav.jpeg",
     team: "Corporate Relations",
     position: "USG",
     instagram: "https://www.instagram.com/_anshuydv25/",
@@ -121,7 +121,7 @@ export const secretariat = [
   },
   {
     name: "Mayank Gupta",
-    image: "Mayank Gupta.jpg",
+    image: "Mayank_Gupta.jpg",
     team: "Executive Board",
     position: "USG",
     instagram: "https://www.instagram.com/mayank_3706/?hl=en",
@@ -129,7 +129,7 @@ export const secretariat = [
   },
   {
     name: "Swarnika Thakur",
-    image: "Swarnika Thakur.jpg",
+    image: "Swarnika Thakur.jpeg",
     team: "Public Relations",
     position: "USG",
     instagram: "https://www.instagram.com/_meethi_7.85?igsh=MWE1aHI4aTR2b2hlcw==",
@@ -201,7 +201,7 @@ export const secretariat = [
   },
   {
     name: "Katammagari Manas Joel",
-    image: "Katammagari.jpg",
+    image: "Katammagari_Manas_Joel.jpg",
     team: "Creatives and Social Media",
     position: "USG",
     instagram: "https://www.instagram.com/manas_joel?igsh=M3JjZGZmenVvanc4&utm_source=ig_contact_invite",
@@ -329,7 +329,7 @@ export const secretariat = [
   },
   {
     name: "Chetna Mundra",
-    image: "Chetna Mundra.jpg",
+    image: "Chetna Mundra.jpeg",
     team: "Operations",
     position: "USG",
     instagram: null,
@@ -345,7 +345,7 @@ export const secretariat = [
   },
   {
     name: "Sushmita Patil",
-    image: "Sushmita Patil.jpg",
+    image: "Sushmita Patil.jpeg",
     team: "Delegate Affairs",
     position: "USG",
     instagram: "https://www.instagram.com/sushmita_patil29/?hl=en",
@@ -393,7 +393,7 @@ export const secretariat = [
   },
   {
     name: "Tharun A Surana",
-    image: "Tharun A Surana.jpg",
+    image: "Tharun A Surana.png",
     team: "Delegate Affairs",
     position: "USG",
     instagram: "https://www.instagram.com/tharun_surana_?utm_source=qr",

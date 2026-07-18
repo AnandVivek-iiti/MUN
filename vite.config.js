@@ -2,11 +2,10 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
-    port: 3005,
-    allowedHosts: ['mun.iiti.ac.in'], // Add this line to allow your host
+    port: 3000,
+    allowedHosts: ['mun.iiti.ac.in'],
   },
 });
