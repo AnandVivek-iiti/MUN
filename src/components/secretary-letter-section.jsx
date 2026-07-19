@@ -95,41 +95,49 @@ export function SecretaryLetterSection() {
                 Distinguished Guests,
               </p>
               <p>
-                It gives me immense pleasure to welcome you to the <strong>9th edition of MUN IIT Indore</strong>. Over the
-                years, this conference has become a symbol of intellectual exchange, diplomacy, and leadership — values
-                that we, as a community, deeply cherish and strive to uphold.
+                नमस्कार! It is with great pride and gratitude that I welcome you to <strong>MUN IIT Indore 10.0</strong>.
               </p>
               <p>
-                MUN IIT Indore has always aimed to provide a platform where diverse perspectives converge, where
-                dialogue triumphs over disagreement, and where young minds engage with the complexities of our world
-                through empathy and reason. As we step into our ninth edition, we continue this legacy with renewed
-                energy, offering committees and agendas that challenge conventional thought and inspire impactful
-                debate.
+                A decade of MUN IIT Indore is more than just a milestone, it is a testament to a community that has
+                consistently believed in the power of dialogue, diplomacy, and informed discourse. As we celebrate our
+                tenth edition, we honor the legacy built by those before us while embracing the responsibility of
+                taking it forward.
               </p>
               <p>
-                The Secretariat has worked tirelessly to ensure that MUN IIT Indore 10.0 not only mirrors the authenticity
-                of real-world diplomacy but also fosters collaboration, critical thinking, and respect for differing
-                opinions. We believe that every delegate, regardless of experience, brings a unique voice that adds
-                value to the conversation.
+                In a world where differences often dominate headlines, Model United Nations reminds us that meaningful
+                progress begins with conversation. This conference is not merely a competition of arguments but an
+                opportunity to understand perspectives beyond our own, challenge assumptions, and develop solutions
+                through collaboration.
               </p>
               <p>
-                To all participants — I urge you to approach every discussion with curiosity and humility. Let this
-                conference serve as a reminder that diplomacy begins with understanding, and leadership begins with
-                listening.
+                Whether you are attending your first conference or your fiftieth, I encourage you to make the most of
+                every committee session, every moderated caucus, and every conversation beyond the committee room.
+                Speak with conviction, listen with empathy, negotiate with integrity, and remember that diplomacy is
+                measured not only by the strength of one's words but also by the willingness to understand others.
               </p>
               <p>
-                I extend my heartfelt gratitude to the organizing team and Executive Board for their relentless
-                dedication. Their efforts ensure that this conference remains not only an academic experience but also a
-                celebration of ideas and unity.
+                This edition has been envisioned with the aim of delivering an intellectually stimulating and
+                professionally enriching experience. From carefully curated committees and agendas to an exceptional
+                Executive Board and a dedicated organizing team, every effort has been made to ensure that MUN IIT
+                Indore 10.0 is worthy of this landmark edition.
               </p>
               <p>
-                On behalf of the entire Secretariat, I warmly welcome you to <strong>MUN IIT Indore 10.0</strong>. May this
-                edition inspire meaningful dialogue, lasting friendships, and a deeper sense of purpose.
+                I extend my sincere appreciation to the administration of IIT Indore, every member of the Secretariat,
+                the Executive Board, the Organizing Committee, our partners, and everyone who has worked behind the
+                scenes to make this conference possible. Their commitment and countless hours of effort have
+                transformed an idea into the event you are about to experience.
               </p>
               <p>
-                Sincerely,
+                Finally, to each delegate joining us, thank you for choosing to be a part of MUN IIT Indore 10.0. I
+                hope this conference challenges you to think deeper, inspires you to lead with purpose, and leaves you
+                with friendships and memories that extend far beyond these few days.
+              </p>
+              <p>I wish you all an engaging, rewarding, and unforgettable conference.</p>
+              <p>Bravo Zulu!</p>
+              <p>
+                Best,
                 <br />
-                <span className="text-[#00ffff] font-bold text-xl">Sharik Mansoori</span>
+                <span className="text-[#00ffff] font-bold text-xl">Kavyansh Raj Singh</span>
                 <br />
                 <span className="text-[#00ffff]/80 italic">Secretary-General, MUN IIT Indore 10.0</span>
                 <span className="text-[#00ffff] text-3xl font-serif">"</span>

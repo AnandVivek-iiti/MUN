@@ -3,12 +3,12 @@ import { useMemo } from "react"
 
 export function TimelineSection() {
   const timelineEvents = [
-    { date: "December 15, 2024", title: "Delegate Applications Open", description: "Registration begins for individual delegates and delegations" },
-    { date: "January 10, 2025", title: "Early Bird Registration Closes", description: "Last day for discounted registration fees" },
-    { date: "January 25, 2025", title: "Committee Allocations Released", description: "Delegates receive their country and committee assignments" },
-    { date: "January 2, 2026", title: "Conference Day 1", description: "Opening ceremony, committee session 1 & 2, Gala night" },
-    { date: "January 3, 2026", title: "Conference Day 2", description: "Committee sessions 3 & 4, diplomatic dinner" },
-    { date: "January 4, 2026", title: "Conference Day 3", description: "Final committee session, closing ceremony & awards" },
+    { date: "To be announced", title: "Delegate Applications Open", description: "Registration begins for individual delegates and delegations" },
+    { date: "To be announced", title: "Early Bird Registration Closes", description: "Last day for discounted registration fees" },
+    { date: "To be announced", title: "Committee Allocations Released", description: "Delegates receive their country and committee assignments" },
+    { date: "To be announced", title: "Conference Day 1", description: "Opening ceremony, committee session 1 & 2, Gala night" },
+    { date: "To be announced", title: "Conference Day 2", description: "Committee sessions 3 & 4, diplomatic dinner" },
+    { date: "To be announced", title: "Conference Day 3", description: "Final committee session, closing ceremony & awards" },
   ]
 
   const eventsWithDates = useMemo(() => {

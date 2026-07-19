@@ -83,19 +83,19 @@ export default function Footer() {
               <div className="flex items-center space-x-3 text-white/80 hover:text-[#00ffff] transition-colors duration-300">
                 <Phone size={18} className="text-[#00ffff]" />
                 <div>
-                  <p className="font-small">Chandrahasa R.- 8639421562</p>
+                  <p className="font-small">Kavyansh - 89498 98072</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3 text-white/80 hover:text-[#00ffff] transition-colors duration-300">
                 <Phone size={18} className="text-[#00ffff]" />
                 <div>
-                  <p className="font-small">Kumar Shubam B.- 7978008126</p>
+                  <p className="font-small">Kavyansh - 89498 98072</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3 text-white/80 hover:text-[#00ffff] transition-colors duration-300">
                 <Phone size={18} className="text-[#00ffff]" />
                 <div>
-                  <p className="font-small">Sri Varsha D.- 9676094039</p>
+                  <p className="font-small">Kavyansh - 89498 98072</p>
                 </div>
               </div>
 
@@ -140,9 +140,17 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="mt-12 pt-8 border-t border-[#00ffff]/20 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/60 text-sm mb-4 md:mb-0">
-            © 2025 MUN IITI. All rights reserved. | Designed with ❤️ by MUN IITI Web Team.
+            © 2026 MUN IITI. All rights reserved. | Designed with ❤️ by{" "}
+            <a
+              href="https://www.linkedin.com/in/anandvivek1223/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-[#00ffff] hover:text-white transition-colors duration-300"
+            >
+              Anand Vivek
+            </a>
+            .
           </p>
-          
         </div>
       </div>
     </footer>

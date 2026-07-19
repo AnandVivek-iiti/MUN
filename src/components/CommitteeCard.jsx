@@ -1,19 +1,13 @@
 import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
-import { Linkedin, Instagram, User, Users, FileText } from "lucide-react";
+import { User, Users, FileText } from "lucide-react";
 
 const CommitteeCard = ({
   name,
   imageSrc,
   description,
   agenda,
-  chairperson,
-  viceChairperson,
-  chairLinkedin,
-  chairInstagram,
-  viceLinkedin,
-  viceInstagram,
   isOnline,
 }) => {
   const cardRef = useRef(null);
@@ -156,75 +150,23 @@ const CommitteeCard = ({
           </div>
         )}
 
-        {/* Chairperson Box */}
-        {chairperson && (
-          <div className="relative mb-4 p-4 rounded-xl bg-gray-800/50 border border-gray-700 hover:border-primary/40 transition-all">
-            <div className="absolute top-3 right-3 flex gap-2">
-              {chairLinkedin && (
-                <motion.a
-                  whileHover={{ scale: 1.15 }}
-                  href={chairLinkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:text-blue-300 transition"
-                >
-                  <Linkedin size={18} />
-                </motion.a>
-              )}
-              {chairInstagram && (
-                <motion.a
-                  whileHover={{ scale: 1.15 }}
-                  href={chairInstagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-pink-400 hover:text-pink-300 transition"
-                >
-                  <Instagram size={18} />
-                </motion.a>
-              )}
-            </div>
-            <div className="flex items-center justify-center gap-2 mb-1">
-              <User size={18} className="text-primary" />
-              <h4 className="text-primary font-semibold">Chairperson</h4>
-            </div>
-            <p className="text-white font-medium">{chairperson}</p>
+        {/* Chairperson Box — placeholder only, will be filled once teams register */}
+        <div className="relative mb-4 p-4 rounded-xl bg-gray-800/50 border border-gray-700 hover:border-primary/40 transition-all">
+          <div className="flex items-center justify-center gap-2 mb-1">
+            <User size={18} className="text-primary" />
+            <h4 className="text-primary font-semibold">Chairperson</h4>
           </div>
-        )}
+          <p className="text-gray-500 text-sm italic">To be announced</p>
+        </div>
 
-        {/* Vice Chairperson Box */}
-        {viceChairperson && (
-          <div className="relative p-4 rounded-xl bg-gray-800/50 border border-gray-700 hover:border-primary/40 transition-all">
-            <div className="absolute top-3 right-3 flex gap-2">
-              {viceLinkedin && (
-                <motion.a
-                  whileHover={{ scale: 1.15 }}
-                  href={viceLinkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:text-blue-300 transition"
-                >
-                  <Linkedin size={18} />
-                </motion.a>
-              )}
-              {viceInstagram && (
-                <motion.a
-                  whileHover={{ scale: 1.15 }}
-                  href={viceInstagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-pink-400 hover:text-pink-300 transition"
-                >
-                  <Instagram size={18} />
-                </motion.a>
-              )}
-            </div>
-            <div className="flex items-center justify-center gap-2 mb-1">
-              <Users size={18} className="text-primary" />
-              <h4 className="text-primary font-semibold">Vice-Chairperson</h4>
-            </div>
-            <p className="text-white font-medium">{viceChairperson}</p>
+        {/* Vice Chairperson Box — placeholder only, will be filled once teams register */}
+        <div className="relative p-4 rounded-xl bg-gray-800/50 border border-gray-700 hover:border-primary/40 transition-all">
+          <div className="flex items-center justify-center gap-2 mb-1">
+            <Users size={18} className="text-primary" />
+            <h4 className="text-primary font-semibold">Vice-Chairperson</h4>
           </div>
-        )}
+          <p className="text-gray-500 text-sm italic">To be announced</p>
+        </div>
       </div>
     </motion.div>
   );

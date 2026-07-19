@@ -181,7 +181,7 @@ const TimeToGo = () => {
                                     <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/5 via-cyan-400/10 to-cyan-400/5 animate-pulse" />
                                     <div className="relative">
                                         <h4 className="text-lg font-black text-cyan-400 mb-1">
-                                            JANUARY 2–4, 2026
+                                            Date To be announced
                                         </h4>
                                         <p className="text-white text-sm mb-1 font-semibold">
                                             THREE DAYS OF DIPLOMATIC EXCELLENCE
@@ -237,7 +237,7 @@ const TimeToGo = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-cyan-400/40 rounded-xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                 <img
-                                    src="/time-to-go.jpg"
+                                    src="/pod.jpeg"
                                     alt="Conference Venue"
                                     className="w-full h-96 object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                                 />

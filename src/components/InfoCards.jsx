@@ -146,9 +146,9 @@ const InfoCards = () => {
       subtitle: "Mark Your Calendars",
       description: "Keep track of the milestones of MUN 10.0 at IIT Indore.",
       details: [
-        { date: "2 January 2026", event: "Day 1: MUN 10.0 Opening Ceremony" },
-        { date: "3 January 2026", event: "Day 2:Traditional Day" },
-        { date: "4 January 2026", event: "Day 3: Closing Ceremony" },
+        { date: "To be announced", event: "Day 1: MUN 10.0 Opening Ceremony" },
+        { date: "To be announced", event: "Day 2:Traditional Day" },
+        { date: "To be announced", event: "Day 3: Closing Ceremony" },
       ],
       icon: (
         <svg
@@ -274,8 +274,8 @@ const InfoCards = () => {
 >
   <CardContainer className="inter-var w-full max-w-[77rem]">
     <CardBody
-      className="bg-black relative group/card hover:shadow-2xl h-fit hover:shadow-cyan-500/[0.1] 
-        border-cyan-500/20 border-black/[0.1] w-full rounded-xl px-8 py-10 
+      className="bg-black relative group/card hover:shadow-2xl h-fit hover:shadow-cyan-500/[0.1]
+        border-cyan-500/20 border-black/[0.1] w-full rounded-xl px-8 py-10
         border hover:border-cyan-400/50 transition-all duration-300"
     >
       {/* Header */}
@@ -315,9 +315,9 @@ const InfoCards = () => {
             key={idx}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
-            className="w-36 sm:w-44 h-24 flex flex-col justify-center items-center 
-              rounded-xl text-center px-3 py-2 bg-gradient-to-r from-cyan-950/20 
-              to-teal-950/20 border border-cyan-500/10 hover:border-cyan-400 
+            className="w-36 sm:w-44 h-24 flex flex-col justify-center items-center
+              rounded-xl text-center px-3 py-2 bg-gradient-to-r from-cyan-950/20
+              to-teal-950/20 border border-cyan-500/10 hover:border-cyan-400
               hover:shadow-[0_0_15px_rgba(0,255,255,0.4)] transition-all duration-300"
           >
             <p className="text-white text-sm font-semibold">{c.committee}</p>

@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+import { UserRound, MessageSquareQuote } from "lucide-react";
 import PageHeader from "../components/PageHeader";
 
 const PastEditions = () => {
   const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });
-  const [selectedGuest, setSelectedGuest] = useState(null);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -28,79 +28,8 @@ const PastEditions = () => {
     { image: "/6.JPG", description: "Closing Ceremony Snapshot" },
   ];
 
-  const chiefGuests = [
-    {
-      name: "Ashok Kantha",
-      year: "2024",
-      designation: "A former Ambassador of India to China",
-      image: "/guest1.jpg",
-      description: `Ashok Kantha - closing ceremony chief guest
-
-
-A former Ambassador of India to China (2013–2016), Mr. Kantha has a distinguished career spanning 38+ years during which he has held pivotal positions:
-- 🔹 Secretary (East), managing relations with 65 nations 🌍.
-- 🔹 High Commissioner to Sri Lanka & Malaysia.
-- 🔹 Consul General in Hong Kong and Deputy Chief of Mission in Nepal.
-- 🔹 Key architect of India's foreign policy on China and East Asia.
-
-
-Renowned for his deep expertise in Asian affairs and fluency in Chinese, his journey is an inspiration for aspiring diplomats and changemakers.
-
-
-Ambassador Rajiv Bansal has represented India at several global platforms and UN conferences. Known for his expertise in multilateral diplomacy, his leadership inspires young delegates to approach negotiation and policy-making with empathy and logic.`,
-    },
-    {
-      name: "Rajan Sudhesh Ratna",
-      year: "2024",
-      designation: "UN ESCAP",
-      image: "/guest2.jpg",
-      description: `Rajan Sudhesh Ratna - opening ceremony chief guest 
-
-Here’s a glimpse of his incredible journey:
-
-📌 Deputy Head of the South and South-West Asia Office of UN ESCAP, New Delhi.
-📌 Leads initiatives in research, policy advisory, and capacity building, focusing on empowering women-led MSMEs through digital marketing and e-commerce 🌐.
-📌 Formerly served in the Trade, Investment, and Innovation Division at UN ESCAP, Bangkok 🌍.
-📌 Professor and Head of the Centre for WTO Studies, Indian Institute of Foreign Trade, New Delhi (2008–2010) 📖.
-📌 A former Indian civil servant with 25+ years of experience in the Ministry of Commerce, specializing in trade policy and WTO negotiations.
-Dr. Ananya Gupta is a foreign policy researcher and educator whose work focuses on global governance and youth-led diplomacy. She has mentored students and MUN participants worldwide on conflict resolution and peacebuilding.`,
-    },
-  ];
-
-  const testimonials = [
-    {
-      name: "Dhairya Bhandari",
-      text: "IITI MUN 8.0 was an absolute delight to be a part of. The committee sessions were intense, engaging, and brilliantly moderated—every debate pushed us to think deeper and speak better. A huge shoutout to the USGs for their flawless management; everything was organized with such clarity and care. From logistics to hospitality, the arrangements were top-notch and made the experience all the more memorable. Hats off to the entire team for pulling off such a fantastic conference!",
-    },
-    {
-      name: "Sagar Kuntal",
-      text: "Attending this MUN for the second consecutive year has been nothing short of rewarding. As a veterinary student, I always look forward to opportunities that challenge my perspective, and this event did exactly that yet again. The discussions were intellectually stimulating, the coordination seamless, and the atmosphere dynamic and welcoming. It was great to see how thoughtfully everything was planned, from the committee proceedings to hospitality. Returning to this platform felt like coming back to a space that encourages growth, confidence, and fun. Looking forward to the next one already!",
-    },
-    {
-      name: "Divyae Arya",
-      text: "MUN’24 at IIT Indore was truly an enriching experience. The topics were thought-provoking, sparking deep discussions and critical thinking. I got to meet a lot of new people and engage in meaningful conversations beyond the committee. The event was seamlessly executed, thanks to the amazing organisers. Thank you for a memorable experience for all the delegates.",
-    },
-    {
-      name: "Samvaadi Dadhi",
-      text: "The event was organised and executed well. Debating over international issues, forming alliances for drafting resolutions, and representing a nation as a delegate gave me valuable exposure to real-world diplomacy. MUN 8.0 was truly a fun learning experience.",
-    },
-    {
-      name: "Snehith Budde",
-      text: "Being part of IITI MUN 8.0 has been an incredible opportunity to connect, communicate, and collaborate with highly motivated and extraordinary young minds. The conference featured well-experienced and thoughtful delegates, all showcasing their diplomatic and debating skills. The Executive Board guided and mentored us throughout, and the event was extremely well-organized across three days, enhanced by IIT Indore’s vibrant atmosphere, beautiful campus, and warm hospitality. IITI MUN is a great platform to showcase diplomatic skills and network effectively.",
-    },
-    {
-      name: "Arjav Yadav",
-      text: "Really fantastic experience participating in IITI MUN 8.0. It was my first MUN and was made memorable by the Chair and the commendable work of the organisers. The materials and environment for discussion were top-notch. I met some very interesting people from various parts of the country and enjoyed the event thoroughly.",
-    },
-    {
-      name: "Vaishnavi Ventrapragada",
-      text: "Participating in the MUN was a fun and enriching experience that greatly improved my public speaking and critical thinking skills. The debates were engaging and thought-provoking. Kudos to the Secretariat and Chairs for conducting the event seamlessly and professionally!",
-    },
-    {
-      name: "Sangam",
-      text: "The 8th edition of MUN in IIT Indore was a conference full of mutual learning and connection. Sharp debates with a diverse pool of talents, great campus support, and friendly people made this event memorable. Surely one of the best chairs and hospitality I’ve experienced. Best wishes for future MUNs to all management.",
-    },
-  ];
+  // Placeholder cards — chief guests for this edition are yet to be announced
+  const chiefGuestPlaceholders = [1, 2];
 
   return (
     <section className="relative min-h-screen text-white overflow-hidden bg-black">
@@ -257,7 +186,7 @@ Dr. Ananya Gupta is a foreign policy researcher and educator whose work focuses 
         </div>
       </section>
 
-      {/* === Chief Guests === */}
+      {/* === Chief Guests (Placeholder — TBA) === */}
       <section className="py-20 px-6 md:px-12 relative z-10">
         <div className="max-w-6xl mx-auto text-center mb-12">
           <motion.h2
@@ -284,81 +213,42 @@ Dr. Ananya Gupta is a foreign policy researcher and educator whose work focuses 
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           />
-          <p className="text-gray-400 text-lg">Inspiring voices that graced our journey</p>
+          <p className="text-gray-400 text-lg">To be announced</p>
         </div>
 
         <div className="flex flex-col md:flex-row gap-10 justify-center">
-          {chiefGuests.map((guest, index) => (
+          {chiefGuestPlaceholders.map((placeholder, index) => (
             <motion.div
               key={index}
-              className="relative bg-black/50 p-8 rounded-2xl border border-[#00ffff]/20 hover:border-[#00ffff]/40 transition-all duration-500 w-80 mx-auto text-center cursor-pointer"
+              className="relative bg-black/50 p-8 rounded-2xl border border-[#00ffff]/20 hover:border-[#00ffff]/40 transition-all duration-500 w-80 mx-auto text-center"
               whileHover={{ scale: 1.02 }}
-              onClick={() => setSelectedGuest(guest)}
             >
-              <motion.img
-                src={guest.image}
-                alt={guest.name}
-                className="w-36 h-36 rounded-full mx-auto mb-6 object-cover border-2 border-[#00ffff]/40"
-                whileHover={{ rotate: [0, 3, -3, 0] }}
-                transition={{ duration: 1 }}
-              />
-              <h3 className="text-2xl font-bold text-white">{guest.name}</h3>
-              <p className="text-[#00ffff]">{guest.designation}</p>
-              <div className="text-gray-400 mt-1">{guest.year}</div>
+              <motion.div
+                className="w-36 h-36 rounded-full mx-auto mb-6 flex items-center justify-center border-2 border-dashed border-[#00ffff]/40 bg-[#00ffff]/5"
+                animate={{
+                  borderColor: [
+                    "rgba(0,255,255,0.3)",
+                    "rgba(0,255,255,0.6)",
+                    "rgba(0,255,255,0.3)",
+                  ],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Number.POSITIVE_INFINITY,
+                  ease: "easeInOut",
+                }}
+              >
+                <UserRound className="w-14 h-14 text-[#00ffff]/50" />
+              </motion.div>
+              <h3 className="text-2xl font-bold text-white/60">To Be Announced</h3>
+              <p className="text-[#00ffff]/60">Details coming soon</p>
+              <div className="text-gray-500 mt-1">2026</div>
             </motion.div>
           ))}
         </div>
       </section>
 
-      {/* === Modal for Chief Guest Details === */}
-      <AnimatePresence>
-        {selectedGuest && (
-          <motion.div
-            className="fixed inset-0 bg-black/80 flex justify-center items-center z-50 p-6 overflow-y-auto"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={(e) => {
-              if (e.target === e.currentTarget) setSelectedGuest(null);
-            }}
-          >
-            <motion.div
-              className="relative bg-black/90 border border-[#00ffff]/40 rounded-2xl p-8 max-w-lg w-full text-center my-8"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <button
-                onClick={() => setSelectedGuest(null)}
-                className="absolute top-3 right-4 text-[#00ffff] text-2xl hover:text-white"
-              >
-                &times;
-              </button>
-
-              <img
-                src={selectedGuest.image}
-                alt={selectedGuest.name}
-                className="w-40 h-40 mx-auto rounded-full mb-6 object-cover border-2 border-[#00ffff]/50"
-              />
-              <h3 className="text-3xl font-bold text-white mb-2">{selectedGuest.name}</h3>
-              <p className="text-[#00ffff] mb-2">{selectedGuest.designation}</p>
-              <p className="text-gray-400 text-sm mb-4">{selectedGuest.year}</p>
-
-              {/* Scrollable Description */}
-              <div className="max-h-[60vh] overflow-y-auto pr-2 text-gray-300 text-base leading-relaxed scrollbar-thin scrollbar-thumb-[#00ffff]/40 scrollbar-track-transparent">
-                {selectedGuest.description.split("\n").map((line, idx) => (
-                  <p key={idx} className="mb-3 whitespace-pre-line">
-                    {line}
-                  </p>
-                ))}
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      {/* === Testimonials === */}
+      {/* === Testimonials (Coming Soon) === */}
       <section className="py-20 px-6 md:px-12 relative z-10">
         <div className="max-w-6xl mx-auto text-center mb-12">
           <motion.h2
@@ -385,21 +275,18 @@ Dr. Ananya Gupta is a foreign policy researcher and educator whose work focuses 
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           />
-          <p className="text-gray-400 text-lg">Hear from our passionate delegates</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {testimonials.map((t, index) => (
-            <motion.div
-              key={index}
-              className="bg-black/50 border border-[#00ffff]/20 rounded-2xl p-8 text-left shadow-md hover:border-[#00ffff]/40 transition-all duration-500"
-              whileHover={{ scale: 1.02 }}
-            >
-              <p className="text-gray-300 mb-6 italic">"{t.text}"</p>
-              <h4 className="text-[#00ffff] text-lg font-semibold">— {t.name}</h4>
-            </motion.div>
-          ))}
-        </div>
+        <motion.div
+          className="max-w-2xl mx-auto text-center bg-black/40 border border-[#00ffff]/20 rounded-2xl p-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <MessageSquareQuote className="w-10 h-10 text-[#00ffff]/50 mx-auto mb-4" />
+          <p className="text-gray-400 text-lg">Testimonials will be added later.</p>
+        </motion.div>
       </section>
     </section>
   );

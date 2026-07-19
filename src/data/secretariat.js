@@ -105,7 +105,7 @@ export const secretariat = [
   },
   {
     name: "Anshu Yadav",
-    image: "Anshu Yadav.jpg",
+    image: "Anshu.png",
     team: "Corporate Relations",
     position: "USG",
     instagram: "https://www.instagram.com/_anshuydv25/",
@@ -265,7 +265,7 @@ export const secretariat = [
   },
   {
     name: "Disha Yadav",
-    image: "Disha Yadav.jpg",
+    image: "Disha.png",
     team: "Public Relations",
     position: "USG",
     instagram: null,
@@ -329,7 +329,7 @@ export const secretariat = [
   },
   {
     name: "Chetna Mundra",
-    image: "Chetna.jpg",
+    image: "Chetna.png",
     team: "Operations",
     position: "USG",
     instagram: null,
@@ -369,7 +369,7 @@ export const secretariat = [
   },
   {
     name: "Vedika Vishwakarma",
-    image: "Vedika Vishwakarma.jpg",
+    image: "Vedika Vishwakarma.jpeg",
     team: "Creatives and Social Media",
     position: "USG",
     instagram: "https://www.instagram.com/vedi22vish?igsh=MWlsYXZ5aGR4Nzlybg==",
@@ -393,7 +393,7 @@ export const secretariat = [
   },
   {
     name: "Tharun A Surana",
-    image: "Tharun A Surana.png",
+    image: "Tharun A Surana.jpeg",
     team: "Delegate Affairs",
     position: "USG",
     instagram: "https://www.instagram.com/tharun_surana_?utm_source=qr",

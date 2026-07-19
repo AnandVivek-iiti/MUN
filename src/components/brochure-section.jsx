@@ -3,21 +3,13 @@
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import { useState } from "react";
-import LovelyAlert from "./Alert"; 
+import LovelyAlert from "./Alert";
 
 export function BrochureSection() {
   const [showAlert, setShowAlert] = useState(false);
 
   const handleDownload = () => {
-    // Trigger file download
-    const link = document.createElement("a");
-    link.href = "/brochure.pdf"; 
-    link.download = "IITIMUN 10.0 Brochure.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-
-    // Show lovely alert
+    // Brochure not available yet — show a friendly alert instead of downloading
     setShowAlert(true);
     setTimeout(() => setShowAlert(false), 3500);
   };
@@ -25,7 +17,9 @@ export function BrochureSection() {
   return (
     <section className="py-20 px-4 relative overflow-hidden">
       {/* Lovely alert */}
-      {showAlert && <LovelyAlert message="Brochure downloading... 💾" duration={3500} />}
+      {showAlert && (
+        <LovelyAlert message="Brochure coming soon! Stay tuned 📄" duration={3500} />
+      )}
 
       <div className="max-w-7xl mx-auto">
         <div className="bg-gradient-to-r from-black/80 to-black/60 backdrop-blur-md border border-[#00ffff]/30 rounded-3xl p-8 md:p-12 relative overflow-hidden">
@@ -70,7 +64,7 @@ export function BrochureSection() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleDownload}
-                className="bg-[#00ffff] text-black px-8 py-4 rounded-full font-bold text-lg shadow-lg shadow-[#00ffff]/20 hover:shadow-[#00ffff]/40 transition-all duration-300 flex items-center gap-2"
+                className="bg-[#00ffff]/60 text-black px-8 py-4 rounded-full font-bold text-lg shadow-lg shadow-[#00ffff]/20 hover:shadow-[#00ffff]/40 transition-all duration-300 flex items-center gap-2 cursor-pointer"
               >
                 <Download className="w-5 h-5" />
                 Download Brochure
