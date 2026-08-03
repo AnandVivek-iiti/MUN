@@ -295,14 +295,14 @@ export const secretariat = [
     instagram: "https://www.instagram.com/aashima_1213?igsh=MXd1MTJob3hld3Nzbw==",
     linkedin: "https://www.linkedin.com/in/aashima-singh-51662b377?utm_source=share_via&utm_content=profile&utm_medium=member_android"
   },
-  {
-    name: "Piyushi",
-    image: "Piyushi.jpg",
-    team: "Corporate Relations",
-    position: "USG",
-    instagram: "https://www.instagram.com/piyushiijagga?igsh=MWhmYTh2YzZmOGNiZg==",
-    linkedin: "https://www.linkedin.com/in/piyushi-jagga-404b27395?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-  },
+  // {
+  //   name: "Piyushi",
+  //   image: "Piyushi.jpg",
+  //   team: "Corporate Relations",
+  //   position: "USG",
+  //   instagram: "https://www.instagram.com/piyushiijagga?igsh=MWhmYTh2YzZmOGNiZg==",
+  //   linkedin: "https://www.linkedin.com/in/piyushi-jagga-404b27395?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+  // },
   {
     name: "Aashish Sharma",
     image: "Aashish Sharma.jpg",
