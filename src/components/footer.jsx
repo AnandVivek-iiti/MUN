@@ -142,7 +142,7 @@ export default function Footer() {
           <p className="text-white/60 text-sm mb-4 md:mb-0">
             © 2026 MUN IITI. All rights reserved. | Designed with ❤️ by{" "}
             <a
-              href="https://www.linkedin.com/in/anandvivek1223/"
+              href="https://mun.iiti.ac.in"
               target="_blank"
               rel="noopener noreferrer"
               className="font-bold text-[#00ffff] hover:text-white transition-colors duration-300"
