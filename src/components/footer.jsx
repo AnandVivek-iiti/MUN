@@ -147,7 +147,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="font-bold text-[#00ffff] hover:text-white transition-colors duration-300"
             >
-              Anand Vivek
+             MUN Web Dev Team
             </a>
             .
           </p>
