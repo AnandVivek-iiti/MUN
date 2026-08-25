@@ -1,86 +1,52 @@
-name: Deploy to IIT CloudPanel Server
+name: Deploy MUN site
 
-# Trigger: run automatically on every push to main.
-# Also allow manually triggering from the GitHub Actions tab.
 on:
   push:
     branches: [main]
-  workflow_dispatch:
-
-# Prevent two deploys from racing each other if you push twice quickly.
-concurrency:
-  group: production-deploy
-  cancel-in-progress: false
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
-      - name: SSH into server and deploy
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.SSH_PORT || 22 }}
-          script_stop: true
-          script: |
-            set -e
-
-            SITE_PATH="${{ secrets.SITE_PATH }}"
-            cd "$SITE_PATH"
-
-            echo "== Recording current commit (for rollback if needed) =="
-            PREV_COMMIT=$(git rev-parse HEAD)
-            echo "$PREV_COMMIT" > /tmp/mun_prev_commit.txt
-
-            echo "== Pulling latest code =="
-            git fetch origin main
-            git reset --hard origin/main
-
-            echo "== Installing dependencies =="
-            npm ci
-
-            echo "== Building (vite build -> dist/) =="
-            npm run build
-
-            echo "== Restarting app via PM2 =="
-            pm2 restart mun
-
-            echo "== Deploy steps finished =="
-            pm2 status
-
-      - name: Health check
+      - name: Deploy
         run: |
-          sleep 5
-          STATUS=$(curl -s -o /dev/null -w "%{http_code}" "${{ secrets.SITE_URL }}")
-          echo "Site responded with status: $STATUS"
-          if [ "$STATUS" -ne 200 ]; then
-            echo "Health check FAILED (status $STATUS)"
-            exit 1
-          fi
-          echo "Health check passed ✅"
+          set -e
+          SITE_PATH="$HOME/htdocs/mun.iiti.ac.in"
+          cd "$SITE_PATH"
+
+          echo "== Recording current commit (for rollback if needed) =="
+          PREV_COMMIT=$(git rev-parse HEAD)
+          echo "$PREV_COMMIT" > /tmp/mun_prev_commit.txt
+
+          echo "== Pulling latest code =="
+          git fetch origin main
+          git reset --hard origin/main
+
+          echo "== Installing dependencies =="
+          npm ci
+
+          echo "== Building (vite build -> dist/) =="
+          npm run build
+
+          echo "== Restarting app via PM2 =="
+          pm2 restart mun
+
+          echo "== Deploy steps finished =="
+          pm2 status
 
       - name: Rollback on failure
         if: failure()
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.SSH_PORT || 22 }}
-          script: |
-            set -e
-            SITE_PATH="${{ secrets.SITE_PATH }}"
-            cd "$SITE_PATH"
-            if [ -f /tmp/mun_prev_commit.txt ]; then
-              PREV_COMMIT=$(cat /tmp/mun_prev_commit.txt)
-              echo "Rolling back to $PREV_COMMIT"
-              git reset --hard "$PREV_COMMIT"
-              npm ci
-              npm run build
-              pm2 restart mun
-              echo "Rollback complete, app restarted"
-            else
-              echo "No previous commit recorded, skipping rollback"
-            fi
+        run: |
+          SITE_PATH="$HOME/htdocs/mun.iiti.ac.in"
+          cd "$SITE_PATH"
+          if [ -f /tmp/mun_prev_commit.txt ]; then
+            PREV_COMMIT=$(cat /tmp/mun_prev_commit.txt)
+            echo "Rolling back to $PREV_COMMIT"
+            git reset --hard "$PREV_COMMIT"
+            npm ci
+            npm run build
+            pm2 restart mun
+            echo "Rollback complete, app restarted"
+          else
+            echo "No previous commit recorded, skipping rollback"
+          fi
