@@ -24,18 +24,18 @@ export const committees = [
     description:
       "The United Nations Security Council (UNSC) has the primary responsibility for the maintenance of international peace and security.",
   },
-  {
-    name: "World Health Organization (WHO)",
-    imageSrc: "/committees/WHO.png",
-    chairperson: "Ashima Jha",
-    viceChairperson: "Vinayak Mishra",
-    agenda:
-      "Governing Artificial Intelligence in Healthcare while balancing Innovation with Ethical Responsibility.",
-    chairLinkedin: "https://www.linkedin.com/in/ashima-jha-a86a54200",
-    chairInstagram: "https://www.instagram.com/ashimajhaofficial",
-    description:
-      "The World Health Organization (WHO) is the specialized UN agency responsible for international public health.",
-  },
+  // {
+  //   name: "World Health Organization (WHO)",
+  //   imageSrc: "/committees/WHO.png",
+  //   chairperson: "Ashima Jha",
+  //   viceChairperson: "Vinayak Mishra",
+  //   agenda:
+  //     "Governing Artificial Intelligence in Healthcare while balancing Innovation with Ethical Responsibility.",
+  //   chairLinkedin: "https://www.linkedin.com/in/ashima-jha-a86a54200",
+  //   chairInstagram: "https://www.instagram.com/ashimajhaofficial",
+  //   description:
+  //     "The World Health Organization (WHO) is the specialized UN agency responsible for international public health.",
+  // },
   {
     name: "United Nations Human Rights Council (UNHRC)",
     imageSrc: "/committees/UNHRC.png",
@@ -48,18 +48,18 @@ export const committees = [
     description:
       "The United Nations Human Rights Council (UNHRC) is responsible for promoting and protecting human rights around the world.",
   },
-  {
-    name: "World Trade Organization (WTO)",
-    imageSrc: "/committees/WTO.png",
-    chairperson: "Sriyansh Mohanty",
-    viceChairperson: "Swapneel Dutta",
-    agenda:
-      "Deliberation on Environmental Safeguards, and Strategic Governance of Rare Earth Minerals in Global Trade.",
-    chairLinkedin: "https://www.linkedin.com/in/sriyansh-mohanty-45a192321",
-    chairInstagram: "https://www.instagram.com/aaansshh",
-    description:
-      "The World Trade Organization (WTO) regulates international trade and ensures trade flows as smoothly, predictably, and freely as possible.",
-  },
+  // {
+  //   name: "World Trade Organization (WTO)",
+  //   imageSrc: "/committees/WTO.png",
+  //   chairperson: "Sriyansh Mohanty",
+  //   viceChairperson: "Swapneel Dutta",
+  //   agenda:
+  //     "Deliberation on Environmental Safeguards, and Strategic Governance of Rare Earth Minerals in Global Trade.",
+  //   chairLinkedin: "https://www.linkedin.com/in/sriyansh-mohanty-45a192321",
+  //   chairInstagram: "https://www.instagram.com/aaansshh",
+  //   description:
+  //     "The World Trade Organization (WTO) regulates international trade and ensures trade flows as smoothly, predictably, and freely as possible.",
+  // },
   {
     name: "All India Political Parties Meet (AIPPM)",
     imageSrc: "/committees/AIPPM.png",
@@ -74,16 +74,16 @@ export const committees = [
       "The All India Political Parties Meet (AIPPM) serves as a platform for representatives of different political parties to deliberate on pressing national issues.",
   },
   {
-    name: "United Nations Office on Drugs and Crime (UNODC)",
-    imageSrc: "/committees/UNODC.png",
-    chairperson: "Mohil Mehra",
-    viceChairperson: "Syed Ahmad Ibaad Bukhari",
-    agenda:
-      "Strengthening International Cooperation to Combat Drug Trafficking and Substance Abuse through Education and Rehabilitation.",
-    chairLinkedin: "https://www.linkedin.com/in/mohil-mehra",
-    chairInstagram: "https://www.instagram.com/mehraongram",
+    name: "United Nations Environment Programme (UNEP)",
+    imageSrc: "/committees/UNEP.png",
+    //   chairperson: "Mohil Mehra",
+    //   viceChairperson: "Syed Ahmad Ibaad Bukhari",
+    //   agenda:
+    //     "Strengthening International Cooperation to Combat Drug Trafficking and Substance Abuse through Education and Rehabilitation.",
+    //   chairLinkedin: "https://www.linkedin.com/in/mohil-mehra",
+    //   chairInstagram: "https://www.instagram.com/mehraongram",
     description:
-      "The United Nations Office on Drugs and Crime (UNODC) focuses on combating illicit drugs, organized crime, and international terrorism.",
+      "The United Nations Environment Programme (UNEP) is responsible for coordinating the UN's environmental activities and assisting developing countries in implementing environmentally sound policies and practices.",
   },
   {
     name: "United Nations Commission on the Status of Women (UNCSW)",
@@ -96,5 +96,18 @@ export const committees = [
     viceInstagram: "https://www.instagram.com/snehalthakre_",
     description:
       "The United Nations Commission on the Status of Women (UNCSW) is the principal global body promoting gender equality and women empowerment.",
+  },
+  {
+    name: "International Court of Justice (ICJ)",
+    imageSrc: "/committees/ICJ.png",
+    chairperson: "Raghav Agarwal",
+
+    viceChairperson: "Raghav Agarwal",
+    agenda:
+      "Deliberation on the Legality of the Use of Artificial Intelligence in Autonomous Weapons Systems.",
+    chairLinkedin: "https://www.linkedin.com/in/raghav-agarwal-1a0b4b1b9",
+    chairInstagram: "https://www.instagram.com/raghavagarwal_",
+    description: "The International Court of Justice (ICJ) is the principal judicial organ of the United Nations, responsible for settling legal disputes between states and providing advisory opinions on international legal issues.",
+
   },
 ];

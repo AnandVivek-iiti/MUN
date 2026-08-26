@@ -2,6 +2,7 @@
 
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { Download } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 import PageHeader from "../components/PageHeader";
 
@@ -92,6 +93,15 @@ const EmblaSponsorCarousel = ({
 };
 
 const Sponsors = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/sponsors/marketing_Brouchure.pdf";
+    link.download = "MUN_IIT_Indore_Brochure.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const pastSponsors = [
     { name: "Shankar IAS", image: "/sponsors/shankar.jpg", }, { name: "HitBullsEye", image: "/sponsors/hitbulleye.png", }, { name: "Lawctopus", image: "/sponsors/lawtopus.png", }, { name: "Simple Body Talk", image: "/sponsors/simplebodytalks.webp", }, { name: "ED Times", image: "/sponsors/edtimes.jpeg", }, { name: "Startup News FYI", image: "/sponsors/startupnews.jpeg", }, { name: "Global Hues", image: "/sponsors/theglobalhues.webp", }, { name: "DU Beat", image: "/sponsors/dubeats.jpeg", }, { name: "Shape", image: "/sponsors/shape.jpg", },
   ];
@@ -129,7 +139,7 @@ const Sponsors = () => {
           }}
           transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
         >
-          MUN IIT Indore 2025 Sponsors
+          MUN IIT Indore 2026 Sponsors
         </motion.h2>
         <motion.div
           className="w-24 h-1 bg-gradient-to-r from-[#00ffff] to-transparent mx-auto mb-8"
@@ -139,12 +149,49 @@ const Sponsors = () => {
           viewport={{ once: true }}
         />
 
-        <p className="text-gray-400 text-lg mt-12">
+        {/* <p className="text-gray-400 text-lg mt-12">
           <span className="text-[#00ffff] font-semibold">
             Sponsors will be announced soon!
           </span>{" "}
           Stay tuned.
-        </p>
+
+        </p> */}
+        {/* <hr className="border-gray-600 pt-10"  /> */}
+    {/* Content */}
+          <div className="relative py-10 px-20 z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="space-y-4 text-center md:text-left"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                Download the <span className="text-[#00ffff]">Marketing Brochure</span>
+              </h2>
+              <p className="text-white max-w-2xl">
+                Get comprehensive information regarding marketing, branding and sponosrship in our official brochure.
+
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={handleDownload}
+                className="bg-[#00ffff] text-black px-8 py-4 rounded-full font-bold text-lg  transition-all duration-300 flex items-center gap-2 cursor-pointer"
+              >
+                <Download className="w-5 h-5" />
+                Download Brochure
+              </motion.button>
+            </motion.div>
+          </div>
       </section>
 
       {/* past sponsors */}

@@ -35,7 +35,7 @@ function CountUp({ end, duration, delay = 0, suffix = "", prefix = "" }) {
   return (
     <motion.div
       ref={ref}
-      className="font-bold text-5xl md:text-6xl text-[#00ffff]"
+      className="font-bold text-4xl md:text-5xl lg:text-6xl text-[#00ffff]"
       whileHover={{
         scale: 1.1,
         textShadow: "0 0 15px rgba(0,255,255,0.8)",
@@ -125,11 +125,12 @@ export function CountUpSection() {
           />
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {[
-            { value: 4000, suffix: "+", label: "Delegates", delay: 0 },
-            { value: 15, suffix: "+", label: "Committees", delay: 0 },
-            { value: 8, suffix: "", label: "Years of Excellence", delay: 0 },
+            { value: 5000, suffix: "+", label: "Delegates", delay: 0 },
+            { value: 25, suffix: "+", label: "Committees", delay: 0 },
+            { value: 9, suffix: "", label: "Years of Excellence", delay: 0 },
+            { value: 170, suffix: "", label: "Countries Participating", delay: 0 },
           ].map((stat, index) => (
             <motion.div
               key={index}
@@ -144,7 +145,7 @@ export function CountUpSection() {
                 borderColor: "rgba(0,255,255,0.6)",
                 transition: { duration: 0.3 },
               }}
-              className="text-center p-6 bg-black/30 border border-[#00ffff]/20 rounded-2xl hover:border-[#00ffff]/40 transition-all duration-300 relative overflow-hidden group"
+              className="text-center p-4 bg-black/30 border border-[#00ffff]/20 rounded-2xl hover:border-[#00ffff]/40 transition-all duration-300 relative overflow-hidden group"
             >
               <motion.div
                 className="absolute inset-0 bg-[#00ffff]/0 opacity-0 group-hover:opacity-100"
@@ -174,7 +175,7 @@ export function CountUpSection() {
               />
 
               <motion.p
-                className="text-xl text-white/80"
+                className="text-base md:text-lg lg:text-xl text-white/80"
                 whileHover={{
                   color: "#ffffff",
                   scale: 1.05,

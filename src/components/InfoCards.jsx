@@ -173,20 +173,30 @@ const InfoCards = () => {
   ];
 
   const committeeEligibility = [
-    { committee: "WHO", eligibility: "10th and below" },
-    { committee: "UNHRC", eligibility: "12th and below" },
-    // { committee: "WAR CABINET", eligibility: "9th and above" },
-    { committee: "WTO", eligibility: "Open to all" },
-    // { committee: "MPLA", eligibility: "Open to all" },
-    { committee: "AIPPM", eligibility: "Open to all" },
-    { committee: "UNGA", eligibility: "Open to all" },
-    { committee: "UNSC", eligibility: "Open to all" },
-    { committee: "UNCSW", eligibility: "Open to all" },
-    { committee: "UNDOC", eligibility: "Open to all" },
-    // { committee: "DISEC (Online)", eligibility: "Open to all" },
-    { committee: "International Press (IP)", eligibility: "Open to all" },
+    {
+      level: "Beginner–Intermediate",
+      committees: [
+        { committee: "AIPPM", full: "All India Political Parties Meet", size: "80–90 delegates" },
+        { committee: "UNGA", full: "United Nations General Assembly", size: "55–60 delegates" },
+        { committee: "UNCSW", full: "UN Commission on the Status of Women", size: "45–50 delegates" },
+      ],
+    },
+    {
+      level: "Intermediate",
+      committees: [
+        { committee: "UNHRC", full: "UN Human Rights Council", size: "50–55 delegates" },
+        { committee: "UNEP", full: "UN Environment Programme", size: "50–55 delegates" },
+        { committee: "IPC", full: "International Press Corps", size: "40–50 participants" },
+      ],
+    },
+    {
+      level: "Specialized",
+      committees: [
+        { committee: "UNSC", full: "UN Security Council", size: "50–70 delegates" },
+        { committee: "ICJ", full: "International Court of Justice", size: "30–35 delegates" },
+      ],
+    },
   ];
-
   return (
     <section className="py-20 relative overflow-hidden" id="info-cards">
       <div className="container mx-auto px-6 relative z-10">
@@ -265,69 +275,83 @@ const InfoCards = () => {
 
         {/* === COMMITTEE ELIGIBILITY CARD (UPDATED RESPONSIVE GRID) === */}
         {/* === COMMITTEE ELIGIBILITY CARD === */}
-<motion.div
-  className="flex justify-center mt-10"
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8 }}
-  viewport={{ once: true }}
->
-  <CardContainer className="inter-var w-full max-w-[77rem]">
-    <CardBody
-      className="bg-black relative group/card hover:shadow-2xl h-fit hover:shadow-cyan-500/[0.1]
+        <motion.div
+          className="flex justify-center mt-10"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <CardContainer className="inter-var w-full max-w-[77rem]">
+            <CardBody
+              className="bg-black relative group/card hover:shadow-2xl h-fit hover:shadow-cyan-500/[0.1]
         border-cyan-500/20 border-black/[0.1] w-full rounded-xl px-8 py-10
         border hover:border-cyan-400/50 transition-all duration-300"
-    >
-      {/* Header */}
-      <div className="flex flex-col items-center text-center mb-6">
-        <CardItem translateZ="100" className="mb-3">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-12 w-12 text-cyan-400"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={1.5}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 6v6l4 2m6 0a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-        </CardItem>
-        <CardItem translateZ="50" className="text-2xl font-bold text-white">
-          Committee Eligibility
-        </CardItem>
-        <CardItem
-          as="p"
-          translateZ="60"
-          className="text-cyan-400 text-xs font-medium mt-1"
-        >
-          Eligibility Criteria by Committee
-        </CardItem>
-      </div>
+            >
+              {/* Header */}
+              <div className="flex flex-col items-center text-center mb-6">
+                <CardItem translateZ="100" className="mb-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-12 w-12 text-cyan-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={1.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 6v6l4 2m6 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </CardItem>
+                <CardItem translateZ="50" className="text-2xl font-bold text-white">
+                  Committee Eligibility
+                </CardItem>
+                <CardItem
+                  as="p"
+                  translateZ="60"
+                  className="text-cyan-400 text-xs font-medium mt-1"
+                >
+                  Eligibility Criteria by Committee
+                </CardItem>
+              </div>
 
-      {/* Responsive Grid Layout */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-6 justify-items-center mt-6">
-        {committeeEligibility.map((c, idx) => (
-          <motion.div
-            key={idx}
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.2 }}
-            className="w-36 sm:w-44 h-24 flex flex-col justify-center items-center
-              rounded-xl text-center px-3 py-2 bg-gradient-to-r from-cyan-950/20
-              to-teal-950/20 border border-cyan-500/10 hover:border-cyan-400
-              hover:shadow-[0_0_15px_rgba(0,255,255,0.4)] transition-all duration-300"
-          >
-            <p className="text-white text-sm font-semibold">{c.committee}</p>
-            <p className="text-cyan-400 text-xs">{c.eligibility}</p>
-          </motion.div>
-        ))}
-      </div>
-    </CardBody>
-  </CardContainer>
-</motion.div>
+              {/* Grouped by Level */}
+              <div className="flex flex-col gap-8 mt-6">
+                {committeeEligibility.map((group, gIdx) => (
+                  <div key={gIdx}>
+                    <div className="flex items-center gap-3 mb-4 justify-center">
+                      <span className="text-cyan-400 text-sm font-bold uppercase tracking-wider">
+                        {group.level}
+                      </span>
+                      <span className="h-px flex-1 max-w-[80px] bg-gradient-to-r from-cyan-500/50 to-transparent" />
+                    </div>
+
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+                      {group.committees.map((c, idx) => (
+                        <motion.div
+                          key={idx}
+                          whileHover={{ scale: 1.05 }}
+                          transition={{ duration: 0.2 }}
+                          className="w-36 sm:w-44 h-24 flex flex-col justify-center items-center
+                    rounded-xl text-center px-3 py-2 bg-gradient-to-r from-cyan-950/20
+                    to-teal-950/20 border border-cyan-500/10 hover:border-cyan-400
+                    hover:shadow-[0_0_15px_rgba(0,255,255,0.4)] transition-all duration-300"
+                          title={c.full}
+                        >
+                          <p className="text-white text-sm font-semibold">{c.committee}</p>
+                          <p className="text-cyan-400 text-xs">{c.size}</p>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </CardBody>
+          </CardContainer>
+        </motion.div>
 
       </div>
     </section>

@@ -70,7 +70,7 @@ export default function Navbar() {
               ))}
             </div>
 
-            {/* Desktop Register Button — no longer links out, opens "coming soon" modal */}
+            {/* Desktop Register Button  opens "coming soon" modal */}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

@@ -89,13 +89,13 @@ export default function Footer() {
               <div className="flex items-center space-x-3 text-white/80 hover:text-[#00ffff] transition-colors duration-300">
                 <Phone size={18} className="text-[#00ffff]" />
                 <div>
-                  <p className="font-small">Kavyansh - 89498 98072</p>
+                  <p className="font-small">Gopesh - 99873 38873</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3 text-white/80 hover:text-[#00ffff] transition-colors duration-300">
                 <Phone size={18} className="text-[#00ffff]" />
                 <div>
-                  <p className="font-small">Kavyansh - 89498 98072</p>
+                  <p className="font-small">⁠Niskarsh - 90055 27580</p>
                 </div>
               </div>
 

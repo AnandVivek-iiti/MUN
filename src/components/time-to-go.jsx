@@ -24,6 +24,8 @@ const TimeToGo = () => {
                         minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
                         seconds: Math.floor((difference % (1000 * 60)) / 1000),
                     })
+                } else {
+                    setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 })
                 }
             }, 1000)
 
@@ -33,7 +35,8 @@ const TimeToGo = () => {
         return timeLeft
     }
 
-    const countdown = useCountdown("2026-01-02T09:00:00")
+    // Event: October 23, 24, 25 — countdown targets the event's start time
+    const countdown = useCountdown("2026-10-23T09:00:00")
 
     // Floating particles
     const particles = Array.from({ length: 15 }, (_, i) => (
@@ -181,7 +184,7 @@ const TimeToGo = () => {
                                     <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/5 via-cyan-400/10 to-cyan-400/5 animate-pulse" />
                                     <div className="relative">
                                         <h4 className="text-lg font-black text-cyan-400 mb-1">
-                                            Date To be announced
+                                            October 23 – 25, 2026
                                         </h4>
                                         <p className="text-white text-sm mb-1 font-semibold">
                                             THREE DAYS OF DIPLOMATIC EXCELLENCE

@@ -143,14 +143,14 @@ export const secretariat = [
     instagram: "https://www.instagram.com/shrawan_61?igsh=MTFmdmhuOTQyNWRnMQ==",
     linkedin: "https://www.linkedin.com/in/shrawan-prajapati-ba3492379/"
   },
-  {
-    name: "Harsh Pathak",
-    image: "Harsh Pathak.jpg",
-    team: "Corporate Relations",
-    position: "USG",
-    instagram: "https://www.instagram.com/harsh_pathak._?igsh=MXRvYjJwY29nM2U0eA==",
-    linkedin: "https://www.linkedin.com/in/harsh-pathak-12b1a7318?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-  },
+  // {
+  //   name: "Harsh Pathak",
+  //   image: "Harsh Pathak.jpg",
+  //   team: "Corporate Relations",
+  //   position: "USG",
+  //   instagram: "https://www.instagram.com/harsh_pathak._?igsh=MXRvYjJwY29nM2U0eA==",
+  //   linkedin: "https://www.linkedin.com/in/harsh-pathak-12b1a7318?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+  // },
   {
     name: "Anushka vithanala",
     image: "Vithanala Anushka.jpg",
@@ -335,14 +335,14 @@ export const secretariat = [
     instagram: null,
     linkedin: "https://www.linkedin.com/in/chetna-mundra-911515403?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
   },
-  {
-    name: "Akshay.P",
-    image: "Akshay P.jpg",
-    team: "Corporate Relations",
-    position: "USG",
-    instagram: "akshay29904",
-    linkedin: null
-  },
+  // {
+  //   name: "Akshay.P",
+  //   image: "Akshay P.jpg",
+  //   team: "Corporate Relations",
+  //   position: "USG",
+  //   instagram: "akshay29904",
+  //   linkedin: null
+  // },
   {
     name: "Sushmita Patil",
     image: "Sushmita Patil.jpeg",
