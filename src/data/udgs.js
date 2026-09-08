@@ -126,26 +126,7 @@ export const udgs = [
     linkedin: null,
     instagram: null,
   },
-  {
-    id: "udg-13",
-    name: "Nanavath Vishwanath Rathod",
-    image: driveThumb("1_b7qG_iGZapIv_AJ1V_SOoypjzy4LkVR"),
-    team: "Creatives and Social Media",
-    position: "Creatives and Social Media",
-    email: "me240003049@iiti.ac.in",
-    linkedin: "https://www.linkedin.com/in/nanavath-vishwanath-rathod",
-    instagram: "https://www.instagram.com/vishwanath.rathod16/",
-  },
-  {
-    id: "udg-14",
-    name: "Manideep",
-    image: driveThumb("1Mz4g5xcv9ie8x9oXDRWFuKFPp3XGpYmh"),
-    team: "Creatives and Social Media",
-    position: "Creatives and Social Media",
-    email: "che250008021@iiti.ac.in",
-    linkedin: "https://www.linkedin.com/in/mandangi-manideep-678965402",
-    instagram: "https://www.instagram.com/manideepp_27/",
-  },
+ 
   {
     id: "udg-15",
     name: "Anshuman Mishra",

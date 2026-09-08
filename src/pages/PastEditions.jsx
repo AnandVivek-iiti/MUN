@@ -250,7 +250,7 @@ const PastEditions = () => {
         </div>
       </section>
 
-      {/* === Testimonials (Coming Soon) === */}
+      {/* === Testimonials === */}
       <section className="py-20 px-6 md:px-12 relative z-10">
         <div className="max-w-6xl mx-auto text-center mb-12">
           <motion.h2
@@ -280,14 +280,13 @@ const PastEditions = () => {
         </div>
 
         <motion.div
-          className="max-w-2xl mx-auto text-center bg-black/40 border border-[#00ffff]/20 rounded-2xl p-12"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
+          className="max-w-5xl mx-auto"
         >
-          <MessageSquareQuote className="w-10 h-10 text-[#00ffff]/50 mx-auto mb-4" />
-          <p className="text-gray-400 text-lg">Testimonials will be added later.</p>
+          <AnimatedTestimonials testimonials={testimonials} autoplay />
         </motion.div>
       </section>
     </section>
