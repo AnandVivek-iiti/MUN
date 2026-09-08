@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../components/navbar";
-import { HeroSection } from "../components/hero-section";
-import { WhatIsMun } from "../components/what-is-mun";
-import { CountUpSection } from "../components/count-up-section";
-import { VisionSection } from "../components/vision-section";
-import { TimelineSection } from "../components/timeline-section";
-import { TimelineSectionWithoutDate } from "../components/timelinewithoutdates";
-import { SecretaryLetterSection } from "../components/secretary-letter-section";
-import { BrochureSection } from "../components/brochure-section";
-import Footer from "../components/footer";
-import { FloatingParticles } from "../components/floating-particles";
-import { MunEdition } from "../components/mun-edition";
-import { ProgressBar } from "../components/progress-bar";
-import TimeToGo from "../components/time-to-go";
+import Navbar from "../components/layout/navbar";
+import { HeroSection } from "../components/home/hero-section";
+import { WhatIsMun } from "../components/home/what-is-mun";
+import { CountUpSection } from "../components/home/count-up-section";
+import { VisionSection } from "../components/home/vision-section";
+import { TimelineSection } from "../components/home/timeline-section";
+import { TimelineSectionWithoutDate } from "../components/home/timelinewithoutdates";
+import { SecretaryLetterSection } from "../components/home/secretary-letter-section";
+import { BrochureSection } from "../components/home/brochure-section";
+import Footer from "../components/layout/footer";
+import { FloatingParticles } from "../components/common/floating-particles";
+import { MunEdition } from "../components/home/mun-edition";
+import { ProgressBar } from "../components/home/progress-bar";
+import TimeToGo from "../components/home/time-to-go";
 
 export default function HomePage() {
   const [scrollProgress, setScrollProgress] = useState(0);

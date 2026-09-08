@@ -1,10 +1,10 @@
 // "use client"
-import Description from "../components/Description"
-import InfoCards from "../components/InfoCards"
-import Faq from "../components/Faq"
+import Description from "../components/sections/Description"
+import InfoCards from "../components/sections/InfoCards"
+import Faq from "../components/sections/Faq"
 import { AnimatePresence } from "framer-motion"
-import PageHeader from "../components/PageHeader";
-import { AnimatedBackground, FloatingParticles, MouseGlow } from "../components/FloatingParticles";
+import PageHeader from "../components/common/PageHeader";
+import { AnimatedBackground, FloatingParticles, MouseGlow } from "../components/common/FloatingParticles";
 
 function AboutUs() {
   const navItems = [
@@ -115,10 +115,10 @@ function AboutUs() {
       <AnimatedBackground />
       <FloatingParticles />
       <MouseGlow />
-      
+
       <PageHeader
         title="FAQs"
-        subtitle="Frequent doubts our delegates had"
+        subtitle=""
       />
 
       <style>
@@ -148,7 +148,7 @@ function AboutUs() {
   <Faq />
   <Description />
   <InfoCards />
-  
+
   {/* <Footer /> */}
 </main>
 

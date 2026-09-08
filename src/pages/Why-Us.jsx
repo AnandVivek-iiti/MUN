@@ -7,8 +7,8 @@ import {
   Globe, GraduationCap, Building, FileText,
   Crown, Target, Network, Eye
 } from "lucide-react";
-import { FloatingParticles, MouseGlow, AnimatedBackground } from "../components/FloatingParticles";
-import PageHeader from "../components/PageHeader";
+import { FloatingParticles, MouseGlow, AnimatedBackground } from "../components/common/FloatingParticles";
+import PageHeader from "../components/common/PageHeader";
 
 gsap.registerPlugin(ScrollTrigger);
 

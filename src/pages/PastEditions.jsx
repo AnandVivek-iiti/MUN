@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { UserRound, MessageSquareQuote } from "lucide-react";
-import PageHeader from "../components/PageHeader";
+import PageHeader from "../components/common/PageHeader";
 
 const PastEditions = () => {
   const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });
@@ -103,7 +103,7 @@ const PastEditions = () => {
         <div className="flex flex-col md:flex-row items-center gap-10 bg-black/40 p-8 rounded-2xl border border-[#00ffff]/20 hover:border-[#00ffff]/40 transition-all duration-500">
           <motion.img
             src="/PE.JPG"
-            alt="MUN IIT Indore 8.0"
+            alt="MUN IIT Indore 9.0"
             className="rounded-xl shadow-lg w-full md:w-1/2"
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.6 }}
@@ -111,7 +111,7 @@ const PastEditions = () => {
 
           <div className="flex flex-col gap-5 text-gray-300 text-lg leading-relaxed md:w-1/2">
             <p>
-              <strong>MUN IIT Indore 8.0</strong> embodied the spirit of{" "}
+              <strong>MUN IIT Indore 9.0</strong> embodied the spirit of{" "}
               <span className="text-[#00ffff]">Diplomacy, Debate, and Deliver</span> with unmatched passion and precision.
               Held on the scenic IIT Indore campus, the 8th edition brought together brilliant minds from across the
               country to engage in intellectually charged discussions that mirrored real-world diplomacy.
@@ -125,7 +125,7 @@ const PastEditions = () => {
             </p>
 
             <p>
-              With its flawless execution, engaging debates, and inspiring energy, <strong>MUN IIT Indore 8.0</strong>{" "}
+              With its flawless execution, engaging debates, and inspiring energy, <strong>MUN IIT Indore 9.0</strong>{" "}
               wasn’t just a conference — it was a celebration of ideas, leadership, and collaboration. The edition truly
               lived up to its essence:{" "}
               <span className="italic text-[#00ffff]">Diplomacy. Debate. Deliver.</span>

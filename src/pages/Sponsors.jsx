@@ -4,7 +4,7 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
-import PageHeader from "../components/PageHeader";
+import PageHeader from "../components/common/PageHeader";
 
 const EmblaSponsorCarousel = ({
   items,

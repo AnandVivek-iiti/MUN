@@ -25,14 +25,14 @@ jobs:
           echo "== Installing dependencies =="
           npm ci
 
+          echo "== Optimizing images (JPG/PNG -> WebP) =="
+          npm run optimize:images
+
           echo "== Building (vite build -> dist/) =="
           npm run build
 
-          echo "== Restarting app via PM2 =="
-          pm2 restart mun
-
           echo "== Deploy steps finished =="
-          pm2 status
+          ls -la dist/
 
       - name: Rollback on failure
         if: failure()
@@ -45,7 +45,6 @@ jobs:
             git reset --hard "$PREV_COMMIT"
             npm ci
             npm run build
-            pm2 restart mun
             echo "Rollback complete, app restarted"
           else
             echo "No previous commit recorded, skipping rollback"

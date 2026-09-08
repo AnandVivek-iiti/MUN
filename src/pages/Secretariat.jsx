@@ -1,55 +1,51 @@
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import PageHeader from "../components/PageHeader";
-import SecretariatCard from "../components/SecretariatCard";
-import { secretariat } from "../data/secretariat";
+import PageHeader from "../components/common/PageHeader";
+import SecretariatCard from "../components/sections/SecretariatCard";
 import {
   FloatingParticles,
   MouseGlow,
   AnimatedBackground,
-} from "../components/FloatingParticles";
-import SecretariatSection from "../components/SecretariatSection";
+} from "../components/common/FloatingParticles";
+import SecretariatSection from "../components/sections/SecretariatSection";
+import { secretariat } from "../data/secretariat";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const members = secretariat;
+
 const Secretariat = () => {
-  const cheifs = secretariat.filter((member) => member.position === "Chief");
-  const heads = secretariat.filter(
+  const heads = members.filter(
     (member) =>
       member.position === "Director General" ||
       member.position === "Secretary General"
   );
-  const corporate = secretariat.filter(
+  const cheifs = members.filter((member) => member.position === "Chief");
+  const corporate = members.filter(
     (m) => m.team === "Corporate Relations" && m.position === "USG"
   );
-
-  const creatives = secretariat.filter(
+  const creatives = members.filter(
     (m) => m.team === "Creatives and Social Media" && m.position === "USG"
   );
-
-  const delegate = secretariat.filter(
+  const delegate = members.filter(
     (m) => m.team === "Delegate Affairs" && m.position === "USG"
   );
-
-  const executive = secretariat.filter(
+  const executive = members.filter(
     (m) => m.team === "Executive Board" && m.position === "USG"
   );
-
-  const operations = secretariat.filter(
+  const operations = members.filter(
     (m) => m.team === "Operations" && m.position === "USG"
   );
-
-  const publicRelations = secretariat.filter(
+  const publicRelations = members.filter(
     (m) => m.team === "Public Relations" && m.position === "USG"
   );
-
-  const video = secretariat.filter(
+  const video = members.filter(
     (m) => m.team === "Video Production" && m.position === "USG"
   );
-  const web = secretariat.filter(
-    (m)=> m.team === "Operations" && m.position === "Web Dev Coordinator"
-  )
+  const web = members.filter(
+    (m) => m.team === "Operations" && m.position === "Web Dev Coordinator"
+  );
 
   return (
     <div className="relative">
@@ -102,12 +98,12 @@ const Secretariat = () => {
           </motion.div>
 
           <div className="flex flex-col md:flex-row justify-center items-center gap-12 px-4 py-6">
-            {heads.map((member, index) => (
+            {heads.map((member) => (
               <SecretariatCard
-                key={index}
+                key={member.name}
                 name={member.name.trim()}
                 position={member.position}
-                imageSrc={`/members/Secratrist/${member.image}`}
+                imageSrc={member.image}
                 email={member.email}
                 linkedin={member.linkedin}
                 instagram={member.instagram}
@@ -159,12 +155,12 @@ const Secretariat = () => {
 
           <div className="relative overflow-hidden">
             <div className="flex flex-wrap justify-center gap-6 px-4 py-6">
-              {cheifs.map((member, index) => (
+              {cheifs.map((member) => (
                 <SecretariatCard
-                  key={index}
+                  key={member.name}
                   name={member.name.trim()}
                   position={member.team}
-                  imageSrc={`/members/Secratrist/${member.image}`}
+                  imageSrc={member.image}
                   email={member.email}
                   linkedin={member.linkedin}
                   instagram={member.instagram}
@@ -183,7 +179,7 @@ const Secretariat = () => {
       <SecretariatSection title="Operations" members={operations} />
       <SecretariatSection title="Public Relations" members={publicRelations} />
       <SecretariatSection title="Video Production" members={video} />
-      <SecretariatSection title="Web Development" members={web}/>
+      <SecretariatSection title="Web Development" members={web} />
     </div>
   );
 };

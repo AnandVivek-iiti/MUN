@@ -4,14 +4,14 @@ import React, { useRef, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import PageHeader from "../components/PageHeader";
-import CommitteeCard from "../components/CommitteeCard";
+import PageHeader from "../components/common/PageHeader";
+import CommitteeCard from "../components/sections/CommitteeCard";
 import { committees } from "../data/committees";
 import {
   FloatingParticles,
   MouseGlow,
   AnimatedBackground,
-} from "../components/FloatingParticles";
+} from "../components/common/FloatingParticles";
 import { Linkedin, Instagram, FileText, User, Users } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);

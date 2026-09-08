@@ -1,7 +1,11 @@
+// Static secretariat & team data.
+// Images are served from the public/members/ directory at their static URL.
+// Missing images fall back to a placeholder avatar in SecretariatCard.
+
 export const secretariat = [
   {
     name: "Kavyansh Raj Singh",
-    image: "Kavyansh Raj Singh.jpg",
+    image: "/members/Secratrist/Kavyansh Raj Singh.jpg",
     team: null,
     position: "Secretary General",
     instagram: "https://www.instagram.com/real_kavyansh/",
@@ -9,7 +13,7 @@ export const secretariat = [
   },
   {
     name: "Rathod Abhinay",
-    image: "Rathod Abhinay.jpg",
+    image: "/members/Secratrist/Rathod Abhinay.jpg",
     team: "Creatives and Social Media",
     position: "USG",
     instagram: "https://www.instagram.com/rathodabhinay_10?igsh=MTlnNTFxOGRudGQ4YQ==",
@@ -17,7 +21,7 @@ export const secretariat = [
   },
   {
     name: "Parv Khandelwal",
-    image: "parv.png",
+    image: "/members/Secratrist/parv.png",
     team: "Operations",
     position: "USG",
     instagram: null,
@@ -25,7 +29,7 @@ export const secretariat = [
   },
   {
     name: "Yaswanth Srisailapu",
-    image: "Yaswanth Srisailapu.jpg",
+    image: "/members/Secratrist/Yaswanth Srisailapu.jpg",
     team: "Video Production",
     position: "USG",
     instagram: "https://www.instagram.com/just_lucky6363?igsh=MWMycmNyNjdlazQwcg==",
@@ -33,7 +37,7 @@ export const secretariat = [
   },
   {
     name: "Pushpendra Bansal",
-    image: "Pushpendra Bansal.jpg",
+    image: "/members/Secratrist/Pushpendra Bansal.jpg",
     team: "Executive Board",
     position: "USG",
     instagram: "https://www.instagram.com/pushpendra.b_?igsh=MXZkYmIycGI1dzNudg==",
@@ -41,7 +45,7 @@ export const secretariat = [
   },
   {
     name: "Meesala Gowtham",
-    image: "Meesala Gowtham.jpg",
+    image: "/members/Secratrist/Meesala Gowtham.jpg",
     team: "Video Production",
     position: "USG",
     instagram: "https://www.instagram.com/gowtham_01845?igsh=MWJyMTdhd3dlZW0wdA==",
@@ -49,7 +53,7 @@ export const secretariat = [
   },
   {
     name: "Jalaj Bhadouria",
-    image: "Jalaj Bhadouria.jpg",
+    image: "/members/Secratrist/Jalaj Bhadouria.jpg",
     team: "Corporate Relations",
     position: "USG",
     instagram: "https://www.instagram.com/jalajj_j/",
@@ -57,7 +61,7 @@ export const secretariat = [
   },
   {
     name: "Bhandavya Panasa",
-    image: "Panasa Bhandavya.jpg",
+    image: "/members/Secratrist/Panasa Bhandavya.jpg",
     team: "Corporate Relations",
     position: "USG",
     instagram: "https://www.instagram.com/bhandavya_panasa?igsh=bjR6NXo5NHk0bm51",
@@ -65,7 +69,7 @@ export const secretariat = [
   },
   {
     name: "Vishruth Agrawal",
-    image: "Vishruth Agrawal.png",
+    image: "/members/Secratrist/Vishruth Agrawal.png",
     team: "Delegate Affairs",
     position: "USG",
     instagram: null,
@@ -73,7 +77,7 @@ export const secretariat = [
   },
   {
     name: "Mahi Maheshwari",
-    image: "Mahi Maheshwari.jpg",
+    image: "/members/Secratrist/Mahi Maheshwari.jpg",
     team: "Operations",
     position: "USG",
     instagram: "https://www.instagram.com/mahi.maheshwari_17?igsh=MWloZm96bXZqOWh1Mw==",
@@ -81,7 +85,7 @@ export const secretariat = [
   },
   {
     name: "Sanchit Kumar Bharti",
-    image: "Sanchit Kumar Bharti.jpg",
+    image: "/members/Secratrist/Sanchit Kumar Bharti.jpg",
     team: "Video Production",
     position: "USG",
     instagram: "https://www.instagram.com/001_skb/",
@@ -89,7 +93,7 @@ export const secretariat = [
   },
   {
     name: "Sanjana vaddadi",
-    image: "Vaddadi Sanjana.jpg",
+    image: "/members/Secratrist/Vaddadi Sanjana.jpg",
     team: "Creatives and Social Media",
     position: "USG",
     instagram: "https://www.instagram.com/sanjana.vaddadi?igsh=YTFyenFsNHAwNnFh",
@@ -97,7 +101,7 @@ export const secretariat = [
   },
   {
     name: "Parv Khandelwal",
-    image: "Parvkhandelwal.jpg",
+    image: "/members/Secratrist/Parvkhandelwal.jpg",
     team: "Corporate Relations",
     position: "USG",
     instagram: "https://www.instagram.com/parv_khandelwal2006?igsh=MjF0c3hvYmhkOHVl&utm_source=qr",
@@ -105,7 +109,7 @@ export const secretariat = [
   },
   {
     name: "Anshu Yadav",
-    image: "Anshu.png",
+    image: "/members/Secratrist/Anshu.png",
     team: "Corporate Relations",
     position: "USG",
     instagram: "https://www.instagram.com/_anshuydv25/",
@@ -113,7 +117,7 @@ export const secretariat = [
   },
   {
     name: "Chunduri Abhiram",
-    image: "Chunduri Abhiram.jpg",
+    image: "/members/Secratrist/Chunduri Abhiram.jpg",
     team: "Delegate Affairs",
     position: "USG",
     instagram: "https://www.instagram.com/why_notabhii?igsh=N2NwcGRvYjk1bTM3",
@@ -121,7 +125,7 @@ export const secretariat = [
   },
   {
     name: "Mayank Gupta",
-    image: "Mayank_Gupta.jpg",
+    image: "/members/Secratrist/Mayank_Gupta.jpg",
     team: "Executive Board",
     position: "USG",
     instagram: "https://www.instagram.com/mayank_3706/?hl=en",
@@ -129,7 +133,7 @@ export const secretariat = [
   },
   {
     name: "Swarnika Thakur",
-    image: "Swarnika Thakur.jpeg",
+    image: "/members/Secratrist/Swarnika Thakur.jpeg",
     team: "Public Relations",
     position: "USG",
     instagram: "https://www.instagram.com/_meethi_7.85?igsh=MWE1aHI4aTR2b2hlcw==",
@@ -137,23 +141,15 @@ export const secretariat = [
   },
   {
     name: "Shrawan Kumar Prajapati",
-    image: "Shrawan Kumar Prajapati.jpg",
+    image: "/members/Secratrist/Shrawan Kumar Prajapati.jpg",
     team: "Public Relations",
     position: "USG",
     instagram: "https://www.instagram.com/shrawan_61?igsh=MTFmdmhuOTQyNWRnMQ==",
     linkedin: "https://www.linkedin.com/in/shrawan-prajapati-ba3492379/"
   },
-  // {
-  //   name: "Harsh Pathak",
-  //   image: "Harsh Pathak.jpg",
-  //   team: "Corporate Relations",
-  //   position: "USG",
-  //   instagram: "https://www.instagram.com/harsh_pathak._?igsh=MXRvYjJwY29nM2U0eA==",
-  //   linkedin: "https://www.linkedin.com/in/harsh-pathak-12b1a7318?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-  // },
   {
     name: "Anushka vithanala",
-    image: "Vithanala Anushka.jpg",
+    image: "/members/Secratrist/Vithanala Anushka.jpg",
     team: "Corporate Relations",
     position: "USG",
     instagram: null,
@@ -161,7 +157,7 @@ export const secretariat = [
   },
   {
     name: "Danish Ansari",
-    image: "Danish Ansari.jpg",
+    image: "/members/Secratrist/Danish Ansari.jpg",
     team: "Corporate Relations",
     position: "USG",
     instagram: "https://www.instagram.com/_danish_._ansari_?igsh=MTYxbDRmaGpzejZxYg==",
@@ -169,7 +165,7 @@ export const secretariat = [
   },
   {
     name: "Undurti Jigisha Pragna",
-    image: "Undurti Jigisha Pragna.jpg",
+    image: "/members/Secratrist/Undurti Jigisha Pragna.jpg",
     team: "Video Production",
     position: "USG",
     instagram: "https://www.instagram.com/pragna_anirudh7/",
@@ -177,7 +173,7 @@ export const secretariat = [
   },
   {
     name: "Bhukya Sethumadhavnaik",
-    image: "Bhukya Sethu Madhav Naik.jpg",
+    image: "/members/Secratrist/Bhukya Sethu Madhav Naik.jpg",
     team: "Creatives and Social Media",
     position: "Chief",
     instagram: "https://www.instagram.com/sethumadhav_19/?hl=en#",
@@ -185,7 +181,7 @@ export const secretariat = [
   },
   {
     name: "VIDADALA KALYANI",
-    image: "Vidadala Kalyani.jpg",
+    image: "/members/Secratrist/Vidadala Kalyani.jpg",
     team: "Delegate Affairs",
     position: "USG",
     instagram: null,
@@ -193,7 +189,7 @@ export const secretariat = [
   },
   {
     name: "Niskarsh",
-    image: "Niskarsh.jpg",
+    image: "/members/Secratrist/Niskarsh.jpg",
     team: "Public Relations",
     position: "Chief",
     instagram: "https://www.instagram.com/_niskarsh_?igsh=MXRkNXJpZmV5b2h4dw==",
@@ -201,7 +197,7 @@ export const secretariat = [
   },
   {
     name: "Katammagari Manas Joel",
-    image: "Katammagari_Manas_Joel.jpg",
+    image: "/members/Secratrist/Katammagari_Manas_Joel.jpg",
     team: "Creatives and Social Media",
     position: "USG",
     instagram: "https://www.instagram.com/manas_joel?igsh=M3JjZGZmenVvanc4&utm_source=ig_contact_invite",
@@ -209,7 +205,7 @@ export const secretariat = [
   },
   {
     name: "Aarushi Prajapati",
-    image: "Aarushi Prajapati.jpg",
+    image: "/members/Secratrist/Aarushi Prajapati.jpg",
     team: "Public Relations",
     position: "USG",
     instagram: "https://www.instagram.com/?hl=en",
@@ -217,7 +213,7 @@ export const secretariat = [
   },
   {
     name: "Gopesh Srinivasan",
-    image: "Gopesh Srinivasan.jpg",
+    image: "/members/Secratrist/Gopesh Srinivasan.jpg",
     team: "Operations",
     position: "Chief",
     instagram: "https://www.instagram.com/gopesh0138/",
@@ -225,7 +221,7 @@ export const secretariat = [
   },
   {
     name: "Shiva Dubey",
-    image: "Shiva Dubey.jpg",
+    image: "/members/Secratrist/Shiva Dubey.jpg",
     team: "Executive Board",
     position: "USG",
     instagram: null,
@@ -233,7 +229,7 @@ export const secretariat = [
   },
   {
     name: "Aneesh banglinti",
-    image: "Aneesh Banglinti.jpg",
+    image: "/members/Secratrist/Aneesh Banglinti.jpg",
     team: "Public Relations",
     position: "USG",
     instagram: "https://www.instagram.com/anee5h_07?igsh=MWNvdHpydHE5MXlkeQ==",
@@ -241,7 +237,7 @@ export const secretariat = [
   },
   {
     name: "Harsh Mahajan",
-    image: "Harsh Mahajan.jpg",
+    image: "/members/Secratrist/Harsh Mahajan.jpg",
     team: "Corporate Relations",
     position: "Chief",
     instagram: "https://www.instagram.com/harsh_mahajan_1108",
@@ -249,7 +245,7 @@ export const secretariat = [
   },
   {
     name: "Harshit Gautam",
-    image: "Harshit Gautam.jpg",
+    image: "/members/Secratrist/Harshit Gautam.jpg",
     team: "Public Relations",
     position: "USG",
     instagram: "https://www.instagram.com/harshit.g.18?igsh=M2VlNXFuNG5mbmY=",
@@ -257,7 +253,7 @@ export const secretariat = [
   },
   {
     name: "Diyali Girisan Smitha",
-    image: "Diyali Girisan Smitha.jpg",
+    image: "/members/Secratrist/Diyali Girisan Smitha.jpg",
     team: "Delegate Affairs",
     position: "USG",
     instagram: "https://www.instagram.com/diyalii._?igsh=c2o2cHphZjh3Nmdz&utm_source=qr",
@@ -265,7 +261,7 @@ export const secretariat = [
   },
   {
     name: "Disha Yadav",
-    image: "Disha.png",
+    image: "/members/Secratrist/Disha.png",
     team: "Public Relations",
     position: "USG",
     instagram: null,
@@ -273,7 +269,7 @@ export const secretariat = [
   },
   {
     name: "Bharti Sehra",
-    image: "Bharti Sehra.jpg",
+    image: "/members/Secratrist/Bharti Sehra.jpg",
     team: "Corporate Relations",
     position: "USG",
     instagram: "https://www.instagram.com/_bha.rti?igsh=MWQ2Mmg5YjMxaXQzMA==",
@@ -281,7 +277,7 @@ export const secretariat = [
   },
   {
     name: "Darsh Chaudhary",
-    image: "Darsh Chaudhary.jpg",
+    image: "/members/Secratrist/Darsh Chaudhary.jpg",
     team: null,
     position: "Director General",
     instagram: "https://www.instagram.com/darsh_chaudhary_24?igsh=bWMwN3BidGN1MTNo&utm_source=qr",
@@ -289,23 +285,15 @@ export const secretariat = [
   },
   {
     name: "Aashima Singh",
-    image: "Aashima Singh.jpg",
+    image: "/members/Secratrist/Aashima Singh.jpg",
     team: "Public Relations",
     position: "USG",
     instagram: "https://www.instagram.com/aashima_1213?igsh=MXd1MTJob3hld3Nzbw==",
     linkedin: "https://www.linkedin.com/in/aashima-singh-51662b377?utm_source=share_via&utm_content=profile&utm_medium=member_android"
   },
-  // {
-  //   name: "Piyushi",
-  //   image: "Piyushi.jpg",
-  //   team: "Corporate Relations",
-  //   position: "USG",
-  //   instagram: "https://www.instagram.com/piyushiijagga?igsh=MWhmYTh2YzZmOGNiZg==",
-  //   linkedin: "https://www.linkedin.com/in/piyushi-jagga-404b27395?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-  // },
   {
     name: "Aashish Sharma",
-    image: "Aashish Sharma.jpg",
+    image: "/members/Secratrist/Aashish Sharma.jpg",
     team: "Public Relations",
     position: "USG",
     instagram: "https://www.instagram.com/mr_aashish_sharma9098?igsh=MTBud2lvYXBtZjdvMA==",
@@ -313,7 +301,7 @@ export const secretariat = [
   },
   {
     name: "Adwit Tiwari",
-    image: "Adwit Tiwari.jpg",
+    image: "/members/Secratrist/Adwit Tiwari.jpg",
     team: "Public Relations",
     position: "USG",
     instagram: "https://www.instagram.com/adwit_tiwari?igsh=MTNtMzlkbjc3MzhiNg==",
@@ -321,7 +309,7 @@ export const secretariat = [
   },
   {
     name: "Abhijeet Kumar Verma",
-    image: "Abhijeet Kumar Verma.jpg",
+    image: "/members/Secratrist/Abhijeet Kumar Verma.jpg",
     team: "Public Relations",
     position: "USG",
     instagram: "https://www.instagram.com/akv_abhijeet?igsh=MWE1MGltamdsYTY2Mw==",
@@ -329,23 +317,15 @@ export const secretariat = [
   },
   {
     name: "Chetna Mundra",
-    image: "Chetna.png",
+    image: "/members/Secratrist/Chetna.png",
     team: "Operations",
     position: "USG",
     instagram: null,
     linkedin: "https://www.linkedin.com/in/chetna-mundra-911515403?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
   },
-  // {
-  //   name: "Akshay.P",
-  //   image: "Akshay P.jpg",
-  //   team: "Corporate Relations",
-  //   position: "USG",
-  //   instagram: "akshay29904",
-  //   linkedin: null
-  // },
   {
     name: "Sushmita Patil",
-    image: "Sushmita Patil.jpeg",
+    image: "/members/Secratrist/Sushmita Patil.jpeg",
     team: "Delegate Affairs",
     position: "USG",
     instagram: "https://www.instagram.com/sushmita_patil29/?hl=en",
@@ -353,7 +333,7 @@ export const secretariat = [
   },
   {
     name: "Swastik Garg",
-    image: "Swastik Garg.jpg",
+    image: "/members/Secratrist/Swastik Garg.jpg",
     team: "Public Relations",
     position: "USG",
     instagram: "https://www.instagram.com/swastikk._.kk?igsh=MXR5cWd3MjV6anZ2bg==",
@@ -361,7 +341,7 @@ export const secretariat = [
   },
   {
     name: "Sanskriti Panchal",
-    image: "Sanskrati Panchal.jpg",
+    image: "/members/Secratrist/Sanskrati Panchal.jpg",
     team: "Public Relations",
     position: "USG",
     instagram: "https://www.instagram.com/sanskriti_panchal_?igsh=MnlpY3l0N2o5NTM2",
@@ -369,7 +349,7 @@ export const secretariat = [
   },
   {
     name: "Vedika Vishwakarma",
-    image: "Vedika Vishwakarma.jpeg",
+    image: "/members/Secratrist/Vedika Vishwakarma.jpeg",
     team: "Creatives and Social Media",
     position: "USG",
     instagram: "https://www.instagram.com/vedi22vish?igsh=MWlsYXZ5aGR4Nzlybg==",
@@ -377,7 +357,7 @@ export const secretariat = [
   },
   {
     name: "Kancharla Neehanth Chaitanya",
-    image: "Neehanth Chaitanya.jpg",
+    image: "/members/Secratrist/Neehanth Chaitanya.jpg",
     team: "Video Production",
     position: "USG",
     instagram: "https://www.instagram.com/neehanth_004?igsh=MWVmZHFkdmI3dm5jag==",
@@ -385,7 +365,7 @@ export const secretariat = [
   },
   {
     name: "Avni Jharware",
-    image: "Avni Jharware.jpg",
+    image: "/members/Secratrist/Avni Jharware.jpg",
     team: "Delegate Affairs",
     position: "Chief",
     instagram: null,
@@ -393,7 +373,7 @@ export const secretariat = [
   },
   {
     name: "Tharun A Surana",
-    image: "Tharun A Surana.jpeg",
+    image: "/members/Secratrist/Tharun A Surana.jpeg",
     team: "Delegate Affairs",
     position: "USG",
     instagram: "https://www.instagram.com/tharun_surana_?utm_source=qr",
@@ -401,7 +381,7 @@ export const secretariat = [
   },
   {
     name: "Vaghela Krutarth Yogeshkumar",
-    image: "Vaghela Krutarth Yogeshkumar.jpg",
+    image: "/members/Secratrist/Vaghela Krutarth Yogeshkumar.jpg",
     team: "Executive Board",
     position: "USG",
     instagram: "https://www.instagram.com/krutarth_v911?igsh=eDBveDcwYnNneG03",
@@ -409,7 +389,7 @@ export const secretariat = [
   },
   {
     name: "Rucha Gadgil",
-    image: "Gadgil Rucha Vinay.jpg",
+    image: "/members/Secratrist/Gadgil Rucha Vinay.jpg",
     team: "Executive Board",
     position: "Chief",
     instagram: "https://www.instagram.com/rucha__gadgil/",
@@ -417,7 +397,7 @@ export const secretariat = [
   },
   {
     name: "Anand Vivek",
-    image: "Anand.jpg",
+    image: "/members/Secratrist/Anand.jpg",
     team: "Operations",
     position: "Web Dev Coordinator",
     instagram: "https://www.instagram.com/anandvivek1223",
@@ -425,7 +405,7 @@ export const secretariat = [
   },
   {
     name: "CHUNCHU SANTHOSH RUSHENDRA",
-    image: "Chunchu Santhosh Rushendra.jpg",
+    image: "/members/Secratrist/Chunchu Santhosh Rushendra.jpg",
     team: "Video Production",
     position: "Chief",
     instagram: null,

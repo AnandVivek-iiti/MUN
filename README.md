@@ -1,12 +1,49 @@
-# React + Vite
+# MUN IIT Indore — Static Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully static, frontend-only website for MUN IIT Indore 10.0, built with **React + Vite + Tailwind CSS**. There is no backend — all content and images are bundled or served as static assets.
 
-Currently, two official plugins are available:
+## Tech Stack
+- React 19 (with React Router for page routing)
+- Vite 6 (fast dev server + production builds)
+- Tailwind CSS v4
+- Framer Motion / GSAP for animations
+- Embla Carousel
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+```bash
+npm install      # install dependencies
+npm run dev      # start dev server (http://localhost:3000)
+npm run build    # production build -> dist/
+npm run preview  # preview the production build
+npm run lint     # run ESLint
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+```
+src/
+├── App.jsx                  # Router + lazy-loaded public pages
+├── main.jsx                 # React entry point
+├── index.css                # Global styles (Tailwind theme + custom CSS)
+│
+├── components/
+│   ├── layout/              # Site chrome: Navbar, Footer, Layout
+│   ├── home/                # Home-page sections (hero, timeline, sponsors, etc.)
+│   ├── sections/            # Shared sections/cards used across pages
+│   ├── common/              # Reusable primitives (PageHeader, Spinner, particles)
+│   ├── ui/                  # Low-level animated UI atoms
+│   └── _unused/             # Legacy/duplicate components not currently used
+│
+├── pages/                   # One file per route (Home, Committees, Secretariat, ...)
+├── data/                    # Static content data (committees, secretariat)
+└── assets/                  # Bundled images (gallery, etc.)
+```
+
+## Static Content
+- **Gallery** — images are imported from `src/assets/gallery/`
+- **Secretariat / Team** — data in `src/data/secretariat.js`, photos served from `public/members/`
+- **Committees** — data in `src/data/committees.js`, logos in `public/committees/`
+- **Sponsors / Past Editions** — served from `public/sponsors/` and `public/`
+
+Anything in `public/` is copied as-is into the build output.
