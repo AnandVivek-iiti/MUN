@@ -159,7 +159,7 @@ export const udgs = [
   },
   {
     id: "udg-18",
-    name: "Sonal Dattatray Kanukale",
+    name: "Sonal",
     image: driveThumb("1U7aWDnVvjv9T5CZTYhK_I3TT8pFmQFDN"),
     team: "Public Relations",
     position: "Public Relations",
