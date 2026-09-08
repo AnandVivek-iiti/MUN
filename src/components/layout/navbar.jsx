@@ -1,15 +1,20 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, Clock } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const MotionLink = motion(Link);
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [showRegisterSoon, setShowRegisterSoon] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
 
   const navItems = [
     { name: "Home", href: "/" },
@@ -90,30 +95,30 @@ export default function Navbar() {
             </motion.button>
           </div>
 
-          {/* Mobile Navigation */}
-          <motion.div
-            initial={false}
-            animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
-            transition={{ duration: 0.3 }}
-            className="lg:hidden overflow-hidden"
-          >
-            <div className="py-4 space-y-4">
-              {navItems.map((item, index) => (
-                <motion.a
-                  key={item.name}
-                  href={item.href}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{
-                    opacity: isOpen ? 1 : 0,
-                    x: isOpen ? 0 : -20,
-                  }}
-                  transition={{ duration: 0.3, delay: index * 0.1 }}
-                  onClick={() => setIsOpen(false)}
-                  className="block text-white hover:text-[#00ffff] transition-colors duration-300 py-2"
-                >
-                  {item.name}
-                </motion.a>
-              ))}
+{/* Mobile Navigation */}
+            <motion.div
+              initial={false}
+              animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
+              transition={{ duration: 0.3 }}
+              className="lg:hidden overflow-hidden"
+            >
+              <div className="py-4 space-y-4">
+                {navItems.map((item, index) => (
+                  <MotionLink
+                    key={item.name}
+                    to={item.href}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{
+                      opacity: isOpen ? 1 : 0,
+                      x: isOpen ? 0 : -20,
+                    }}
+                    transition={{ duration: 0.3, delay: index * 0.1 }}
+                    onClick={() => setIsOpen(false)}
+                    className="block text-white hover:text-[#00ffff] transition-colors duration-300 py-2"
+                  >
+                    {item.name}
+                  </MotionLink>
+                ))}
 
               {/* Mobile Register Button — no longer links out, opens "coming soon" modal */}
               <motion.button

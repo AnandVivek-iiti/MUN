@@ -13,6 +13,7 @@ const abs = (v) => path.resolve(ROOT, v);
 const args = process.argv.slice(2);
 const QUALITY = Number(args[args.indexOf("--quality") + 1]) || 80;
 const DRY_RUN = args.includes("--dry-run");
+const NO_ROTATE = args.includes("--no-rotate");
 
 const dirsArg = args.indexOf("--dirs");
 const DIRS =
@@ -93,7 +94,13 @@ async function convertImage(file) {
   const out = DRY_RUN ? `${webp}.dry` : webp;
 
   try {
-    await sharp(file, { animated: true }).webp({ quality: QUALITY }).toFile(out);
+    const pipeline = sharp(file, { animated: true });
+    if (NO_ROTATE) {
+      pipeline.rotate(0); // disable auto EXIF orientation
+    } else {
+      pipeline.rotate(); // apply EXIF orientation, bake into pixels
+    }
+    await pipeline.webp({ quality: QUALITY }).toFile(out);
   } catch (err) {
     skipped++;
     console.warn(

@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { UserRound, MessageSquareQuote } from "lucide-react";
 import PageHeader from "../components/common/PageHeader";
+import { AnimatedTestimonials } from "../components/ui/animated-testimonials";
+import { testimonials } from "../data/testimonials";
 
 const PastEditions = () => {
   const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });

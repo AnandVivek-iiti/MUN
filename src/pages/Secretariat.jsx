@@ -10,6 +10,7 @@ import {
 } from "../components/common/FloatingParticles";
 import SecretariatSection from "../components/sections/SecretariatSection";
 import { secretariat } from "../data/secretariat";
+import { udgs } from "../data/udgs";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -180,6 +181,9 @@ const Secretariat = () => {
       <SecretariatSection title="Public Relations" members={publicRelations} />
       <SecretariatSection title="Video Production" members={video} />
       <SecretariatSection title="Web Development" members={web} />
+
+      {/* UDGs Section */}
+      <SecretariatSection title="UDGs" members={udgs} />
     </div>
   );
 };

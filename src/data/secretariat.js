@@ -237,7 +237,7 @@ export const secretariat = [
   },
   {
     name: "Harsh Mahajan",
-    image: "/members/Secratrist/Harsh Mahajan.jpg",
+    image: "/members/Secratrist/Harsh-Mahajan.jpeg",
     team: "Corporate Relations",
     position: "Chief",
     instagram: "https://www.instagram.com/harsh_mahajan_1108",

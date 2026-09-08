@@ -5,7 +5,7 @@ import { WhatIsMun } from "../components/home/what-is-mun";
 import { CountUpSection } from "../components/home/count-up-section";
 import { VisionSection } from "../components/home/vision-section";
 import { TimelineSection } from "../components/home/timeline-section";
-import { TimelineSectionWithoutDate } from "../components/home/timelinewithoutdates";
+import { TestimonialsSection } from "../components/home/testimonials-section";
 import { SecretaryLetterSection } from "../components/home/secretary-letter-section";
 import { BrochureSection } from "../components/home/brochure-section";
 import Footer from "../components/layout/footer";
@@ -64,7 +64,7 @@ export default function HomePage() {
         <MunEdition />
         <VisionSection />
         <TimeToGo />
-        <TimelineSectionWithoutDate />
+        <TimelineSection />
         <SecretaryLetterSection />
         <BrochureSection />
         {/* <Footer /> */}
