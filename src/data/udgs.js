@@ -1,15 +1,12 @@
-// Static UDGs data.
-// Photos are served from the Google Drive form submissions via thumbnail URLs.
-// Missing images fall back to a placeholder avatar in SecretariatCard.
 
-const driveThumb = (id) =>
-  `https://drive.google.com/thumbnail?id=${id}&sz=w1000`;
+const localPhoto = (filename) =>
+  `/members/UDGs/${encodeURIComponent(filename)}`;
 
 export const udgs = [
   {
     id: "udg-01",
     name: "David Bajop Christopher Gatphoh",
-    image: driveThumb("1ViSBnRMonjkpcxKauK1980KxMTHUIhL1"),
+    image: localPhoto("260002019 - David Bajop Christopher Gatphoh.JPG"),
     team: "Corporate Relations",
     position: "Corporate Relations",
     email: "ee260002019@iiti.ac.in",
@@ -19,7 +16,7 @@ export const udgs = [
   {
     id: "udg-02",
     name: "Harshit Kumar Arya",
-    image: driveThumb("1LGIK52eOExg5HmneNdaSVw4foLSIJwzv"),
+    image: localPhoto("20260907_112314-IMG_STYLE - Harshit Kumar Arya.jpg"),
     team: "Public Relations",
     position: "Public Relations",
     email: "mems260005019@iiti.ac.in",
@@ -29,7 +26,7 @@ export const udgs = [
   {
     id: "udg-03",
     name: "Dwij Bhavsar",
-    image: driveThumb("1sczRKziQtd7sZM6g5P8fNfDD29cp8lcF"),
+    image: localPhoto("Photograph - Dwij Chirag Bhavsar.jpeg"),
     team: "Corporate Relations",
     position: "Corporate Relations",
     email: "ee260002026@iiti.ac.in",
@@ -39,7 +36,7 @@ export const udgs = [
   {
     id: "udg-04",
     name: "Harsh Yadav",
-    image: driveThumb("1ZnzmKOIEHHqqVP4ec1wU6_v1rjTGamtZ"),
+    image: localPhoto("IMG-20260907-WA0023 - Harsh Yadav.jpg"),
     team: "Corporate Relations",
     position: "Corporate Relations",
     email: "mems260005018@iiti.ac.in",
@@ -49,7 +46,7 @@ export const udgs = [
   {
     id: "udg-05",
     name: "Shashwat Bhatt",
-    image: driveThumb("1fN0UKm-1hmKIxFd-kFD0tN87UhbcuMvR"),
+    image: localPhoto("Screenshot_20260907-145533_Instagram - Shashwat Bhatt.png"),
     team: "Public Relations",
     position: "Public Relations",
     email: "sse260021017@iiti.ac.in",
@@ -59,7 +56,7 @@ export const udgs = [
   {
     id: "udg-06",
     name: "K Deepika Reddy",
-    image: driveThumb("1wttBWmtxh2gatQJIubRZA5Fi3ybxhLhR"),
+    image: localPhoto("IMG_20260907_153207 - K Deepika Reddy.jpg"),
     team: "Corporate Relations",
     position: "Corporate Relations",
     email: "mems260005020@iiti.ac.in",
@@ -69,7 +66,7 @@ export const udgs = [
   {
     id: "udg-07",
     name: "Jaydeep Singh Sikarwar",
-    image: driveThumb("1wqMByhnvUG1q2158r6xn6Ygjn9V7A38v"),
+    image: localPhoto("IMG-20260907-WA0099 - Jaydeep Singh Sikarwar.jpg"),
     team: "Corporate Relations",
     position: "Corporate Relations",
     email: "aic261131010@iiti.ac.in",
@@ -79,7 +76,7 @@ export const udgs = [
   {
     id: "udg-08",
     name: "Hrithik Ram S",
-    image: driveThumb("1AhpaQ1gTf8x8J8weeVJ8tNP0vfGb_X2Q"),
+    image: localPhoto("IMG_20260907_154653 - Hrithik Ram S.jpg"),
     team: "Delegate Affairs",
     position: "Delegate Affairs",
     email: "sse260021008@iiti.ac.in",
@@ -89,7 +86,7 @@ export const udgs = [
   {
     id: "udg-09",
     name: "Manya Joshi",
-    image: driveThumb("1OQmaRfFRLne5AHj7fIQhlcSj7isGD1e4"),
+    image: localPhoto("photo_1 - Manya Joshi.jpeg"),
     team: "Delegate Affairs",
     position: "Delegate Affairs",
     email: "mems260005026@iiti.ac.in",
@@ -99,7 +96,7 @@ export const udgs = [
   {
     id: "udg-10",
     name: "Tejash B Patra",
-    image: driveThumb("1j8o_cAsy6j_eEvtwQsRizsPX7xrSVYAF"),
+    image: localPhoto("IMG-20260830-WA0000(1) - Tejash B Patra.jpg"),
     team: "Public Relations",
     position: "Public Relations",
     email: "bmeds260071027@iiti.ac.in",
@@ -109,7 +106,7 @@ export const udgs = [
   {
     id: "udg-11",
     name: "Akarsha Garg",
-    image: driveThumb("1XkLW8Rkw-m77itf8V1BIwwXjGALlORvx"),
+    image: localPhoto("IMG-20260731-WA0110(1) - Akarsha Garg.jpg"),
     team: "Executive Board",
     position: "Executive Board",
     email: "bmeds260071003@iiti.ac.in",
@@ -119,18 +116,18 @@ export const udgs = [
   {
     id: "udg-12",
     name: "Priyanshu Tangade",
-    image: driveThumb("1V3eJYfQVxOBWG_6ArERC14VNTzjDst__"),
+    image: localPhoto("IMG_20260727_125405210_HDR - Priyanshu Tangade.jpg"),
     team: "Corporate Relations",
     position: "Corporate Relations",
     email: "bmeds260071020@iiti.ac.in",
     linkedin: null,
     instagram: null,
   },
- 
+
   {
     id: "udg-15",
     name: "Anshuman Mishra",
-    image: driveThumb("1MkmApSi_-yfAfSHvVE16Li-iPzycWOyP"),
+    image: localPhoto("IMG_20240907_192250_909 - Anshuman Mishra.jpg"),
     team: "Executive Board",
     position: "Executive Board",
     email: "eese260011003@iiti.ac.in",
@@ -140,7 +137,7 @@ export const udgs = [
   {
     id: "udg-16",
     name: "Gautam Hulloli",
-    image: driveThumb("1kWXGlLcsWOd9FxXY8xFuBFJU0fF1Zhxx"),
+    image: localPhoto("GautamHulloli - Gautam Hulloli.jpg"),
     team: "Corporate Relations",
     position: "Corporate Relations",
     email: "ep260051005@iiti.ac.in",
@@ -150,7 +147,7 @@ export const udgs = [
   {
     id: "udg-17",
     name: "Gaurav Rajput",
-    image: driveThumb("1R2aSvwXWXh2Dl9My489HB4Fn-4vDlznu"),
+    image: localPhoto("Snapchat-2143520082_Original - Gaurav Rajput.jpeg"),
     team: "Public Relations",
     position: "Public Relations",
     email: "aic261131007@gmail.com",
@@ -160,7 +157,7 @@ export const udgs = [
   {
     id: "udg-18",
     name: "Sonal",
-    image: driveThumb("1U7aWDnVvjv9T5CZTYhK_I3TT8pFmQFDN"),
+    image: localPhoto("IMG-20260811-WA2925 - Kanukale Sonal Dattatray.jpg"),
     team: "Public Relations",
     position: "Public Relations",
     email: "me260003037@iiti.ac.in",
@@ -170,7 +167,7 @@ export const udgs = [
   {
     id: "udg-19",
     name: "Kabir D Raj",
-    image: driveThumb("1pc6DQ4aNrlp8T8g68FFc9tJJS9Kx4-BS"),
+    image: localPhoto("DSC_0332 (1) - Kabir D Raj.JPG"),
     team: "Executive Board",
     position: "Executive Board",
     email: "mems260005021@iiti.ac.in",
@@ -180,7 +177,7 @@ export const udgs = [
   {
     id: "udg-20",
     name: "Anshul Dhelia",
-    image: driveThumb("1mTmjz6r2zj9U-sovmkdAGwUlTG8u5oy7"),
+    image: localPhoto("IMG_2643 - Anshul Dhelia.jpeg"),
     team: "Creatives and Social Media",
     position: "Creatives and Social Media",
     email: "cse260001007@iiti.ac.in",
@@ -190,7 +187,7 @@ export const udgs = [
   {
     id: "udg-21",
     name: "Ishita Adya",
-    image: driveThumb("1mAU7xGo-l3DMbUF8w1uWpiDNxGU7Cago"),
+    image: localPhoto("Screenshot_20260908-123644 - Ishita Adya.png"),
     team: "Public Relations",
     position: "Public Relations",
     email: "ee260002034@iiti.ac.in",

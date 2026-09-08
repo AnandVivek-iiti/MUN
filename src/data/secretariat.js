@@ -59,15 +59,15 @@ export const secretariat = [
     linkedin:
       "https://www.linkedin.com/in/m-gowtham-a21544411?utm_source=share_via&utm_content=profile&utm_medium=member_android",
   },
-  {
-    name: "Jalaj Bhadouria",
-    image: "/members/Secratrist/Jalaj Bhadouria.jpg",
-    team: "Corporate Relations",
-    position: "USG",
-    instagram: "https://www.instagram.com/jalajj_j/",
-    linkedin:
-      "https://www.linkedin.com/in/jalaj-bhadouria?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-  },
+  // {
+  //   name: "Jalaj Bhadouria",
+  //   image: "/members/Secratrist/Jalaj Bhadouria.jpg",
+  //   team: "Corporate Relations",
+  //   position: "USG",
+  //   instagram: "https://www.instagram.com/jalajj_j/",
+  //   linkedin:
+  //     "https://www.linkedin.com/in/jalaj-bhadouria?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+  // },
   {
     name: "Bhandavya Panasa",
     image: "/members/Secratrist/Panasa Bhandavya.jpg",
@@ -278,7 +278,19 @@ export const secretariat = [
       "https://www.linkedin.com/in/harshit-gautam-7aab17368?utm_source=share_via&utm_content=profile&utm_medium=member_android",
   },
   {
+    name:"Harshit Sinha ",
+    image: "/members/Secratrist/Harshit Sinha.jpeg",
+    team: "Creatives and Social Media",
+    position: "USG",
+    instagram: "https://www.instagram.com/harshitsinha_?igsh=MW1mZ3V0a2J6cW9v",
+    linkedin:
+      "https://www.linkedin.com/in/harshit-sinha-8b7a5b3b7?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+  },
+
+
+  {
     name: "Nanavath Vishwanath Rathod",
+    image: "/members/UDGs/IMG20260514175330 - Nanavath Vishwanath Rathod.jpg",
     team: "Creatives and Social Media",
     position: "Creatives and Social Media",
     email: "me240003049@iiti.ac.in",
@@ -287,6 +299,7 @@ export const secretariat = [
   },
   {
     name: "Manideep",
+    image: "/members/UDGs/20260907_213831 - Mandangi Manideep.jpg",
     team: "Creatives and Social Media",
     position: "Creatives and Social Media",
     email: "che250008021@iiti.ac.in",
