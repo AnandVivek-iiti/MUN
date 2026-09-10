@@ -1,15 +1,14 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { Menu, X, Clock } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const MotionLink = motion(Link);
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [showRegisterSoon, setShowRegisterSoon] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -26,9 +25,9 @@ export default function Navbar() {
     { name: "Sponsors", href: "/sponsors" },
   ];
 
-  const openRegisterSoon = () => {
+  const openRegister = () => {
     setIsOpen(false);
-    setShowRegisterSoon(true);
+    window.open("https://registration.iiti.ac.in/mun10/", "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -75,11 +74,11 @@ export default function Navbar() {
               ))}
             </div>
 
-            {/* Desktop Register Button  opens "coming soon" modal */}
+            {/* Desktop Register Button — opens the registration link */}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={openRegisterSoon}
+              onClick={openRegister}
               className="hidden lg:block bg-gradient-to-r from-[#00ffff] to-[#00ffff]/80 text-black px-6 py-2 rounded-full font-semibold hover:shadow-lg hover:shadow-[#00ffff]/30 transition-all duration-300"
             >
               Register Now
@@ -120,7 +119,7 @@ export default function Navbar() {
                   </MotionLink>
                 ))}
 
-              {/* Mobile Register Button — no longer links out, opens "coming soon" modal */}
+              {/* Mobile Register Button — opens the registration link */}
               <motion.button
                 initial={{ opacity: 0, x: -20 }}
                 animate={{
@@ -128,7 +127,7 @@ export default function Navbar() {
                   x: isOpen ? 0 : -20,
                 }}
                 transition={{ duration: 0.3, delay: 0.6 }}
-                onClick={openRegisterSoon}
+                onClick={openRegister}
                 className="block w-full bg-gradient-to-r from-[#00ffff] to-[#00ffff]/80 text-black px-6 py-2 rounded-full font-semibold mt-4 text-center"
               >
                 Register Now
@@ -151,59 +150,6 @@ export default function Navbar() {
           }}
         />
       </motion.nav>
-
-      {/* "Registrations Opening Soon" modal — same messaging/style as the Hero section panel,
-          shown as an overlay here since the navbar appears on every page */}
-      <AnimatePresence>
-        {showRegisterSoon && (
-          <motion.div
-            className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center px-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setShowRegisterSoon(false)}
-          >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              transition={{ duration: 0.3 }}
-              onClick={(e) => e.stopPropagation()}
-              className="relative bg-black/90 border border-[#00ffff]/30 rounded-2xl p-8 md:p-10 max-w-md w-full text-center"
-            >
-              <button
-                onClick={() => setShowRegisterSoon(false)}
-                className="absolute top-4 right-4 text-[#00ffff]/70 hover:text-[#00ffff] transition-colors"
-                aria-label="Close"
-              >
-                <X className="w-5 h-5" />
-              </button>
-
-              <motion.div
-                animate={{
-                  boxShadow: [
-                    "0 0 20px rgba(0,255,255,0.3)",
-                    "0 0 40px rgba(0,255,255,0.5)",
-                    "0 0 20px rgba(0,255,255,0.3)",
-                  ],
-                }}
-                transition={{ duration: 2.5, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-                className="w-16 h-16 rounded-full border-2 border-[#00ffff]/60 flex items-center justify-center mx-auto mb-5"
-              >
-                <Clock className="w-7 h-7 text-[#00ffff]" />
-              </motion.div>
-
-              <h3 className="text-2xl md:text-3xl font-black bg-gradient-to-r from-[#00ffff] via-white to-[#00ffff] bg-clip-text text-transparent mb-3">
-                Registrations Opening Soon
-              </h3>
-              <p className="text-white/70 text-sm md:text-base">
-                We're putting the final touches on registration for MUN IITI 10.0. Check back
-                shortly — we can't wait to have you at the conference.
-              </p>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </>
   );
 }
