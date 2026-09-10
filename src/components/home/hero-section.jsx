@@ -309,7 +309,7 @@ export function HeroSection() {
                 className="flex flex-col sm:flex-row justify-center gap-4 pt-4"
               >
                 <motion.button
-                  onClick={() => setShowRegisterSoon(true)}
+                  onClick={() => window.open("https://registration.iiti.ac.in/mun10/", "_blank", "noopener,noreferrer")}
                   whileHover="hover"
                   whileTap={{ scale: 0.95 }}
                   className="bg-[#00ffff] text-black px-8 py-3 rounded-full font-bold text-lg relative overflow-hidden group"
