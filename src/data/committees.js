@@ -2,25 +2,24 @@ export const committees = [
   {
     name: "United Nations General Assembly (UNGA)",
     imageSrc: "/committees/UNGA.png",
-    chairperson: "Yash Agarwal",
-    viceChairperson: "Arham Ali Rizwi",
+    chairperson: "Pratham Golcha",
+    viceChairperson: "Abhinav Mukherjee",
+    chairInstagram: "https://www.instagram.com/prathamgolcha",
+    viceInstagram: "https://www.instagram.com/abhiwaqthai",
     agenda:
-      "Deliberation on the reformation of the UNSC to establish an equitable world order in light of recent developments.",
-    chairLinkedin: "https://www.linkedin.com/in/yash-agrawal-2b1479201",
-    chairInstagram: "https://www.instagram.com/_yashh4_",
+      "The Algorithmic Nuclear Threshold: Preventing AI-Driven Miscalculation in Nuclear Decision-Making.",
     description:
       "The United Nations General Assembly (UNGA) serves as the main deliberative, policymaking, and representative organ of the UN.",
   },
   {
     name: "United Nations Security Council (UNSC)",
     imageSrc: "/committees/UNSC.png",
-    chairperson: "Pratham Golcha",
-    viceChairperson: "Abhinav Mukherjee",
+    chairperson: "Aditya Kiran",
+    viceChairperson: "Ayuj Ashween Menda",
+    chairInstagram: "https://www.instagram.com/adityakiran17",
+    viceInstagram: "https://www.instagram.com/ayuj_menda_17",
     agenda:
-      "Deliberation on the Reform of the Global Security Governance Framework.",
-    chairLinkedin: "https://www.linkedin.com/in/pratham-golcha",
-    chairInstagram: "https://www.instagram.com/prathamgolcha",
-    viceInstagram: "https://www.instagram.com/abhispeaksnow",
+      "Evaluating the Interpretation of Article 51 of the Charter of the United Nations Regarding Military Interventions against Non-State Actors.",
     description:
       "The United Nations Security Council (UNSC) has the primary responsibility for the maintenance of international peace and security.",
   },
@@ -39,12 +38,11 @@ export const committees = [
   {
     name: "United Nations Human Rights Council (UNHRC)",
     imageSrc: "/committees/UNHRC.png",
-    chairperson: "Arham Jain",
-    viceChairperson: "Arghyadip Pal",
+    chairperson: "Arham Ali Rizvi",
+    viceChairperson: "Palki Kashyap",
+    viceInstagram: "https://www.instagram.com/___palkii___",
     agenda:
-      "Ensuring the Protection of Refugees and Displaced Minorities: A Global Review.",
-    viceLinkedin: "https://www.linkedin.com/in/arghyadip-pal-87a945285",
-    viceInstagram: "https://www.instagram.com/arrghyaa",
+      "Strengthening International Human Rights Protection in an Era of Global Crisis and Instability.",
     description:
       "The United Nations Human Rights Council (UNHRC) is responsible for promoting and protecting human rights around the world.",
   },
@@ -63,51 +61,51 @@ export const committees = [
   {
     name: "All India Political Parties Meet (AIPPM)",
     imageSrc: "/committees/AIPPM.png",
-    chairperson: "Mayank Singhal",
-    viceChairperson: "Gunjan Bhandari",
+    chairperson: "Aman Yadav",
+    viceChairperson: "Vishwajit Mishra",
+    chairInstagram: "https://www.instagram.com/amanyadav0501",
+    viceInstagram: "https://www.instagram.com/Vishwajit_mishra06",
     agenda:
-      "Discussion on federal structure of India in light of recent developments.",
-    chairLinkedin: "https://www.linkedin.com/in/mayank-singhal-a0a860157",
-    viceLinkedin: "https://www.linkedin.com/in/gunjan-bhandari-980a7225a",
-    chairInstagram: "https://www.instagram.com/mayankmsd08",
+      "Deliberation on One Nation, One Election — Federal, Electoral and Administrative Implications; and Reforming India's Electoral Process for Greater Transparency and Accountability.",
     description:
       "The All India Political Parties Meet (AIPPM) serves as a platform for representatives of different political parties to deliberate on pressing national issues.",
   },
   {
     name: "United Nations Environment Programme (UNEP)",
     imageSrc: "/committees/UNEP.png",
-    //   chairperson: "Mohil Mehra",
-    //   viceChairperson: "Syed Ahmad Ibaad Bukhari",
-    //   agenda:
-    //     "Strengthening International Cooperation to Combat Drug Trafficking and Substance Abuse through Education and Rehabilitation.",
-    //   chairLinkedin: "https://www.linkedin.com/in/mohil-mehra",
-    //   chairInstagram: "https://www.instagram.com/mehraongram",
+    chairLabel: "Co-Chairperson",
+    viceLabel: "Co-Chairperson",
+    chairperson: "Chirag Agrahari",
+    viceChairperson: "Aryan Banerjee",
+    chairInstagram: "https://www.instagram.com/_chirag_ag_",
+    viceInstagram: "https://www.instagram.com/aryanbanerjeee",
+    agenda:
+      "Examining the Effects of AI, E-Waste, and New Digital Technologies on the Environment.",
     description:
       "The United Nations Environment Programme (UNEP) is responsible for coordinating the UN's environmental activities and assisting developing countries in implementing environmentally sound policies and practices.",
   },
   {
     name: "United Nations Commission on the Status of Women (UNCSW)",
     imageSrc: "/committees/UNCSW.png",
-    chairperson: "Akshat Pratap Singh",
-    viceChairperson: "Snehal Thakre",
+    chairLabel: "Co-Chairperson",
+    viceLabel: "Co-Chairperson",
+    chairperson: "Shaik Salamullah",
+    viceChairperson: "Maanya",
+    chairInstagram: "https://www.instagram.com/im_salamullah",
+    viceInstagram: "https://www.instagram.com/Maanyaprakash_11",
     agenda:
-      "Promotion of gender equality with special emphasis on economic empowerment of women.",
-    viceLinkedin: "https://www.linkedin.com/in/snehal-thakre-762b21268",
-    viceInstagram: "https://www.instagram.com/snehalthakre_",
+      "Examining the Status of Women's Rights in Times of Conflict and Post-Conflict, with Emphasis on Peacebuilding.",
     description:
       "The United Nations Commission on the Status of Women (UNCSW) is the principal global body promoting gender equality and women empowerment.",
   },
   {
     name: "International Court of Justice (ICJ)",
     imageSrc: "/committees/ICJ.png",
-    chairperson: "Raghav Agarwal",
-
-    viceChairperson: "Raghav Agarwal",
+    chairperson: "Hardik Pathak",
+    // Vice Chairperson intentionally left out for now.
     agenda:
-      "Deliberation on the Legality of the Use of Artificial Intelligence in Autonomous Weapons Systems.",
-    chairLinkedin: "https://www.linkedin.com/in/raghav-agarwal-1a0b4b1b9",
-    chairInstagram: "https://www.instagram.com/raghavagarwal_",
-    description: "The International Court of Justice (ICJ) is the principal judicial organ of the United Nations, responsible for settling legal disputes between states and providing advisory opinions on international legal issues.",
-
+      "Determining State Responsibility for Genocidal Conduct within Sovereign Territory.",
+    description:
+      "The International Court of Justice (ICJ) is the principal judicial organ of the United Nations, responsible for settling legal disputes between states and providing advisory opinions on international legal issues.",
   },
 ];

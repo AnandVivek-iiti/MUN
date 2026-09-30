@@ -195,7 +195,7 @@ const Committees = () => {
                     <div className="flex items-center gap-2 mb-1">
                       <User size={18} className="text-[#00ffff]" />
                       <h4 className="text-[#00ffff] font-semibold">
-                        Chairperson
+                        {selectedCommittee.chairLabel || "Chairperson"}
                       </h4>
                     </div>
                     <p className="text-white font-medium">
@@ -232,7 +232,7 @@ const Committees = () => {
                     <div className="flex items-center gap-2 mb-1">
                       <Users size={18} className="text-[#00ffff]" />
                       <h4 className="text-[#00ffff] font-semibold">
-                        Vice-Chairperson
+                        {selectedCommittee.viceLabel || "Vice-Chairperson"}
                       </h4>
                     </div>
                     <p className="text-white font-medium">
