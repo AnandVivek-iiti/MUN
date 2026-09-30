@@ -117,6 +117,8 @@ const Committees = () => {
                   chairInstagram={committee.chairInstagram}
                   viceLinkedin={committee.viceLinkedin}
                   viceInstagram={committee.viceInstagram}
+                  chairLabel={committee.chairLabel}
+                  viceLabel={committee.viceLabel}
                 />
               </motion.div>
             ))}

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
-import { User, Users, FileText } from "lucide-react";
+import { User, Users, FileText, Instagram } from "lucide-react";
 
 const CommitteeCard = ({
   name,
@@ -9,6 +9,12 @@ const CommitteeCard = ({
   description,
   agenda,
   isOnline,
+  chairperson,
+  viceChairperson,
+  chairLabel,
+  viceLabel,
+  chairInstagram,
+  viceInstagram,
 }) => {
   const cardRef = useRef(null);
   const glowRef = useRef(null);
@@ -150,23 +156,59 @@ const CommitteeCard = ({
           </div>
         )}
 
-        {/* Chairperson Box — placeholder only, will be filled once teams register */}
+        {/* Chairperson Box */}
         <div className="relative mb-4 p-4 rounded-xl bg-gray-800/50 border border-gray-700 hover:border-primary/40 transition-all">
+          {chairInstagram && (
+            <a
+              href={chairInstagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="absolute top-3 right-3 text-pink-400 hover:text-pink-300 transition"
+            >
+              <Instagram size={18} />
+            </a>
+          )}
           <div className="flex items-center justify-center gap-2 mb-1">
             <User size={18} className="text-primary" />
-            <h4 className="text-primary font-semibold">Chairperson</h4>
+            <h4 className="text-primary font-semibold">
+              {chairLabel || "Chairperson"}
+            </h4>
           </div>
-          <p className="text-gray-500 text-sm italic">To be announced</p>
+          {chairperson ? (
+            <p className="text-white font-medium">{chairperson}</p>
+          ) : (
+            <p className="text-gray-500 text-sm italic">To be announced</p>
+          )}
         </div>
 
-        {/* Vice Chairperson Box — placeholder only, will be filled once teams register */}
-        <div className="relative p-4 rounded-xl bg-gray-800/50 border border-gray-700 hover:border-primary/40 transition-all">
-          <div className="flex items-center justify-center gap-2 mb-1">
-            <Users size={18} className="text-primary" />
-            <h4 className="text-primary font-semibold">Vice-Chairperson</h4>
+        {/* Vice Chairperson Box (hidden when a committee has only a chair) */}
+        {(viceChairperson || !chairperson) && (
+          <div className="relative p-4 rounded-xl bg-gray-800/50 border border-gray-700 hover:border-primary/40 transition-all">
+            {viceInstagram && (
+              <a
+                href={viceInstagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="absolute top-3 right-3 text-pink-400 hover:text-pink-300 transition"
+              >
+                <Instagram size={18} />
+              </a>
+            )}
+            <div className="flex items-center justify-center gap-2 mb-1">
+              <Users size={18} className="text-primary" />
+              <h4 className="text-primary font-semibold">
+                {viceLabel || "Vice-Chairperson"}
+              </h4>
+            </div>
+            {viceChairperson ? (
+              <p className="text-white font-medium">{viceChairperson}</p>
+            ) : (
+              <p className="text-gray-500 text-sm italic">To be announced</p>
+            )}
           </div>
-          <p className="text-gray-500 text-sm italic">To be announced</p>
-        </div>
+        )}
       </div>
     </motion.div>
   );
