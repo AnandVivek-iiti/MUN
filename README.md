@@ -1,4 +1,4 @@
-# MUN IIT Indore — Official Website
+# MUN IIT Indore  Official Website
 
 Official website for MUN IIT Indore 10.0, built with **React + Vite + Tailwind CSS**.
 ## Tech Stack
