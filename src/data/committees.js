@@ -71,19 +71,17 @@ export const committees = [
       "The All India Political Parties Meet (AIPPM) serves as a platform for representatives of different political parties to deliberate on pressing national issues.",
   },
   {
-    name: "United Nations Environment Programme (UNEP)",
-    imageSrc: "/committees/UNEP.png",
-    chairLabel: "Co-Chairperson",
-    viceLabel: "Co-Chairperson",
-    chairperson: "Chirag Agrahari",
-    viceChairperson: "Aryan Banerjee",
-    chairInstagram: "https://www.instagram.com/_chirag_ag_",
-    viceInstagram: "https://www.instagram.com/aryanbanerjeee",
+    name: "International Court of Justice (ICJ)",
+    imageSrc: "/committees/ICJ.png",
+    chairperson: "Hardik Pathak",
+    viceChairperson: "Anjana",
+    viceInstagram: "https://www.instagram.com/anjana.beinghonest",
     agenda:
-      "Examining the Effects of AI, E-Waste, and New Digital Technologies on the Environment.",
+      "Determining State Responsibility for Genocidal Conduct within Sovereign Territory.",
     description:
-      "The United Nations Environment Programme (UNEP) is responsible for coordinating the UN's environmental activities and assisting developing countries in implementing environmentally sound policies and practices.",
+      "The International Court of Justice (ICJ) is the principal judicial organ of the United Nations, responsible for settling legal disputes between states and providing advisory opinions on international legal issues.",
   },
+
   {
     name: "United Nations Commission on the Status of Women (UNCSW)",
     imageSrc: "/committees/UNCSW.png",
@@ -99,13 +97,16 @@ export const committees = [
       "The United Nations Commission on the Status of Women (UNCSW) is the principal global body promoting gender equality and women empowerment.",
   },
   {
-    name: "International Court of Justice (ICJ)",
-    imageSrc: "/committees/ICJ.png",
-    chairperson: "Hardik Pathak",
-    // Vice Chairperson intentionally left out for now.
+    name: "United Nations Environment Programme (UNEP)",
+    imageSrc: "/committees/UNEP.png",
+    chairLabel: "Co-Chairperson",
+    viceLabel: "Co-Chairperson",
+    chairperson: "Chirag Agrahari",
+    viceChairperson: "Aryan Banerjee",
+    chairInstagram: "https://www.instagram.com/_chirag_ag_",
+    viceInstagram: "https://www.instagram.com/aryanbanerjeee",
     agenda:
-      "Determining State Responsibility for Genocidal Conduct within Sovereign Territory.",
+      "Examining the Effects of AI, E-Waste, and New Digital Technologies on the Environment.",
     description:
-      "The International Court of Justice (ICJ) is the principal judicial organ of the United Nations, responsible for settling legal disputes between states and providing advisory opinions on international legal issues.",
-  },
-];
+      "The United Nations Environment Programme (UNEP) is responsible for coordinating the UN's environmental activities and assisting developing countries in implementing environmentally sound policies and practices.",
+  },];
