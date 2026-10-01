@@ -91,7 +91,7 @@ const CommitteeCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 rounded-2xl shadow-2xl border border-gray-700 max-w-sm mx-auto cursor-pointer perspective"
+      className="group relative bg-gradient-to-br from-gray-900 via-black to-gray-800 rounded-2xl shadow-2xl border border-gray-700 max-w-sm mx-auto cursor-pointer perspective"
       style={{ transformStyle: "preserve-3d" }}
     >
       {/* Glow effect */}
@@ -114,6 +114,17 @@ const CommitteeCard = ({
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+
+        {/* Agenda overlay (shown on hover) */}
+        {agenda && (
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 px-5 py-4 text-center bg-black/90 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="flex items-center gap-2 text-primary font-semibold">
+              <FileText size={16} />
+              <span className="uppercase tracking-wider text-xs">Agenda</span>
+            </div>
+            <p className="text-gray-100 text-sm leading-snug">{agenda}</p>
+          </div>
+        )}
       </div>
 
       {/* Committee Info */}
