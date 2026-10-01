@@ -110,7 +110,7 @@ const Committees = () => {
                   description={committee.description}
                   imageSrc={committee.imageSrc}
                   isOnline={committee.mode}
-                  // agenda={committee.agenda}
+                  agenda={committee.agenda}
                   chairperson={committee.chairperson}
                   viceChairperson={committee.viceChairperson}
                   chairLinkedin={committee.chairLinkedin}
