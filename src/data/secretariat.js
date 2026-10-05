@@ -1,6 +1,3 @@
-// Static secretariat & team data.
-// Images are served from the public/members/ directory at their static URL.
-// Missing images fall back to a placeholder avatar in SecretariatCard.
 
 export const secretariat = [
   {
