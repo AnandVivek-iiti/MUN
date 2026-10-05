@@ -427,15 +427,7 @@ export const secretariat = [
     instagram: null,
     linkedin: null,
   },
-  {
-    name: "Tharun A Surana",
-    image: "/members/Secratrist/Tharun A Surana.jpeg",
-    team: "Delegate Affairs",
-    position: "USG",
-    instagram: "https://www.instagram.com/tharun_surana_?utm_source=qr",
-    linkedin:
-      "https://www.linkedin.com/in/tharun-surana-895641254?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
-  },
+  
   {
     name: "Vaghela Krutarth Yogeshkumar",
     image: "/members/Secratrist/Vaghela Krutarth Yogeshkumar.jpg",
