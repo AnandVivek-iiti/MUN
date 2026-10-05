@@ -95,14 +95,7 @@ export const secretariat = [
       "https://www.instagram.com/mahi.maheshwari_17?igsh=MWloZm96bXZqOWh1Mw==",
     linkedin: "https://www.linkedin.com/in/mahi-maheshwari-7056273b1",
   },
-  {
-    name: "Sanchit Kumar Bharti",
-    image: "/members/Secratrist/Sanchit Kumar Bharti.jpg",
-    team: "Video Production",
-    position: "USG",
-    instagram: "https://www.instagram.com/001_skb/",
-    linkedin: "www.linkedin.com/in/sanchit-bharti-265a8736a",
-  },
+
   {
     name: "Sanjana vaddadi",
     image: "/members/Secratrist/Vaddadi Sanjana.jpg",
@@ -268,15 +261,7 @@ export const secretariat = [
     instagram: "https://www.instagram.com/harsh_mahajan_1108",
     linkedin: "https://www.linkedin.com/in/harsh-mahajan-4b3b9431b",
   },
-  {
-    name: "Harshit Gautam",
-    image: "/members/Secratrist/Harshit Gautam.jpg",
-    team: "Public Relations",
-    position: "USG",
-    instagram: "https://www.instagram.com/harshit.g.18?igsh=M2VlNXFuNG5mbmY=",
-    linkedin:
-      "https://www.linkedin.com/in/harshit-gautam-7aab17368?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-  },
+ 
   {
     name:"Harshit Sinha ",
     image: "/members/Secratrist/Harshit Sinha.jpeg",
