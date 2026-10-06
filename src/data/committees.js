@@ -43,6 +43,7 @@ export const committees = [
     viceInstagram: "https://www.instagram.com/___palkii___",
     agenda:
       "Strengthening International Human Rights Protection in an Era of Global Crisis and Instability.",
+isOnline: true,
     description:
       "The United Nations Human Rights Council (UNHRC) is responsible for promoting and protecting human rights around the world.",
   },
@@ -107,6 +108,7 @@ export const committees = [
     viceInstagram: "https://www.instagram.com/aryanbanerjeee",
     agenda:
       "Examining the Effects of AI, E-Waste, and New Digital Technologies on the Environment.",
+isOnline: true,
     description:
       "The United Nations Environment Programme (UNEP) is responsible for coordinating the UN's environmental activities and assisting developing countries in implementing environmentally sound policies and practices.",
   },];
