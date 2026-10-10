@@ -373,14 +373,7 @@ export const secretariat = [
     linkedin:
       "https://www.linkedin.com/in/chetna-mundra-911515403?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
   },
-  {
-    name: "Sushmita Patil",
-    image: "/members/Secratrist/Sushmita Patil.jpeg",
-    team: "Delegate Affairs",
-    position: "USG",
-    instagram: "https://www.instagram.com/sushmita_patil29/?hl=en",
-    linkedin: "https://www.linkedin.com/in/sushmita-patil-340713377/",
-  },
+  
   {
     name: "Swastik Garg",
     image: "/members/Secratrist/Swastik Garg.jpg",
