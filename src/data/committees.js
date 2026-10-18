@@ -8,6 +8,7 @@ export const committees = [
     viceInstagram: "https://www.instagram.com/abhiwaqthai",
     agenda:
       "The Algorithmic Nuclear Threshold: Preventing AI-Driven Miscalculation in Nuclear Decision-Making.",
+    status: "offline",
     description:
       "The United Nations General Assembly (UNGA) serves as the main deliberative, policymaking, and representative organ of the UN.",
   },
@@ -20,6 +21,7 @@ export const committees = [
     viceInstagram: "https://www.instagram.com/ayuj_menda_17",
     agenda:
       "Evaluating the Interpretation of Article 51 of the Charter of the United Nations Regarding Military Interventions against Non-State Actors.",
+    status: "offline",
     description:
       "The United Nations Security Council (UNSC) has the primary responsibility for the maintenance of international peace and security.",
   },
@@ -32,6 +34,7 @@ export const committees = [
   //     "Governing Artificial Intelligence in Healthcare while balancing Innovation with Ethical Responsibility.",
   //   chairLinkedin: "https://www.linkedin.com/in/ashima-jha-a86a54200",
   //   chairInstagram: "https://www.instagram.com/ashimajhaofficial",
+  //   status: "offline",
   //   description:
   //     "The World Health Organization (WHO) is the specialized UN agency responsible for international public health.",
   // },
@@ -43,7 +46,7 @@ export const committees = [
     viceInstagram: "https://www.instagram.com/___palkii___",
     agenda:
       "Strengthening International Human Rights Protection in an Era of Global Crisis and Instability.",
-isOnline: true,
+    status: "online",
     description:
       "The United Nations Human Rights Council (UNHRC) is responsible for promoting and protecting human rights around the world.",
   },
@@ -56,6 +59,7 @@ isOnline: true,
   //     "Deliberation on Environmental Safeguards, and Strategic Governance of Rare Earth Minerals in Global Trade.",
   //   chairLinkedin: "https://www.linkedin.com/in/sriyansh-mohanty-45a192321",
   //   chairInstagram: "https://www.instagram.com/aaansshh",
+  //   status: "offline",
   //   description:
   //     "The World Trade Organization (WTO) regulates international trade and ensures trade flows as smoothly, predictably, and freely as possible.",
   // },
@@ -68,6 +72,7 @@ isOnline: true,
     viceInstagram: "https://www.instagram.com/Vishwajit_mishra06",
     agenda:
       "Deliberation on One Nation, One Election — Federal, Electoral and Administrative Implications; and Reforming India's Electoral Process for Greater Transparency and Accountability.",
+    status: "offline",
     description:
       "The All India Political Parties Meet (AIPPM) serves as a platform for representatives of different political parties to deliberate on pressing national issues.",
   },
@@ -79,10 +84,10 @@ isOnline: true,
     viceInstagram: "https://www.instagram.com/anjana.beinghonest",
     agenda:
       "Determining State Responsibility for Genocidal Conduct within Sovereign Territory.",
+    status: "offline",
     description:
       "The International Court of Justice (ICJ) is the principal judicial organ of the United Nations, responsible for settling legal disputes between states and providing advisory opinions on international legal issues.",
   },
-
   {
     name: "United Nations Commission on the Status of Women (UNCSW)",
     imageSrc: "/committees/UNCSW.png",
@@ -94,6 +99,7 @@ isOnline: true,
     viceInstagram: "https://www.instagram.com/Maanyaprakash_11",
     agenda:
       "Examining the Status of Women's Rights in Times of Conflict and Post-Conflict, with Emphasis on Peacebuilding.",
+    status: "offline",
     description:
       "The United Nations Commission on the Status of Women (UNCSW) is the principal global body promoting gender equality and women empowerment.",
   },
@@ -108,7 +114,8 @@ isOnline: true,
     viceInstagram: "https://www.instagram.com/aryanbanerjeee",
     agenda:
       "Examining the Effects of AI, E-Waste, and New Digital Technologies on the Environment.",
-isOnline: true,
+    status: "online",
     description:
       "The United Nations Environment Programme (UNEP) is responsible for coordinating the UN's environmental activities and assisting developing countries in implementing environmentally sound policies and practices.",
-  },];
+  },
+];
