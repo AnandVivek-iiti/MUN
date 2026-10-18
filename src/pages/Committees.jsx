@@ -45,6 +45,8 @@ const Committees = () => {
   const openModal = (committee) => setSelectedCommittee(committee);
   const closeModal = () => setSelectedCommittee(null);
 
+  const isSelectedOnline = selectedCommittee?.status === "online";
+
   return (
     <div className="relative">
       <AnimatedBackground />
@@ -109,7 +111,7 @@ const Committees = () => {
                   name={committee.name}
                   description={committee.description}
                   imageSrc={committee.imageSrc}
-                  isOnline={committee.mode}
+                  status={committee.status}
                   agenda={committee.agenda}
                   chairperson={committee.chairperson}
                   viceChairperson={committee.viceChairperson}
@@ -146,9 +148,25 @@ const Committees = () => {
             >
               {/* Left side — Content */}
               <div className="flex-1 p-8">
-                <h3 className="text-3xl font-bold text-[#00ffff] mb-4 neon-text">
+                <h3 className="text-3xl font-bold text-[#00ffff] mb-3 neon-text">
                   {selectedCommittee.name}
                 </h3>
+
+                {/* Online / Offline status */}
+                <div className="flex items-center gap-2 mb-4">
+                  <div
+                    className={`w-3 h-3 rounded-full animate-pulse ${
+                      isSelectedOnline ? "bg-green-500" : "bg-red-500"
+                    }`}
+                  />
+                  <span
+                    className={`text-sm font-semibold ${
+                      isSelectedOnline ? "text-green-400" : "text-red-400"
+                    }`}
+                  >
+                    {isSelectedOnline ? "Online" : "Offline"}
+                  </span>
+                </div>
 
                 <p className="text-gray-300 text-base leading-relaxed mb-6">
                   {selectedCommittee.description}
