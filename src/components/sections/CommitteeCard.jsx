@@ -8,7 +8,7 @@ const CommitteeCard = ({
   imageSrc,
   description,
   agenda,
-  isOnline,
+  status,
   chairperson,
   viceChairperson,
   chairLabel,
@@ -18,6 +18,8 @@ const CommitteeCard = ({
 }) => {
   const cardRef = useRef(null);
   const glowRef = useRef(null);
+
+  const isOnline = status === "online";
 
   useEffect(() => {
     const card = cardRef.current;
@@ -136,8 +138,8 @@ const CommitteeCard = ({
         {/* Online / Offline indicator */}
         <div className="flex items-center justify-center gap-2 mb-3">
           <div
-            className={`w-3 h-3 rounded-full ${
-              isOnline ? "bg-green-500 animate-pulse" : "bg-red-500 animate-pulse"
+            className={`w-3 h-3 rounded-full animate-pulse ${
+              isOnline ? "bg-green-500" : "bg-red-500"
             }`}
           ></div>
           <span
