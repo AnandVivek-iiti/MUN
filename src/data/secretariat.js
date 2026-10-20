@@ -457,7 +457,7 @@ export const secretariat = [
   },
   {
     name: "Mandeep ",
-    image: "/members/Secratrist/Mandeep.jpg",
+    image: "/members/Secratrist/mandeep.jpg",
     team: "Creatives ",
     position: "UDG",
     instagram: null,
