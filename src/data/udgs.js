@@ -194,4 +194,14 @@ export const udgs = [
     linkedin: null,
     instagram: "https://www.instagram.com/pheon_ix0910/",
   },
+  {
+    id: "udg-22",
+    name: "Mandeep",
+    image: localPhoto("mandeep.jpg"),
+    team: "Creatives and Social Media",
+    position: "Creatives and Social Media",
+    email: null,
+    linkedin: null,
+    instagram: null,
+  },
 ];
