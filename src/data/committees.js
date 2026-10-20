@@ -17,7 +17,7 @@ export const committees = [
     imageSrc: "/committees/UNSC.png",
     chairperson: "Agamdeep Singh",
     viceChairperson: "Ayuj Ashween Menda",
-    chairInstagram: "https://www.instagram.com/adityakiran17",
+    chairInstagram: "instagram.com",
     viceInstagram: "https://www.instagram.com/ayuj_menda_17",
     agenda:
       "Evaluating the Interpretation of Article 51 of the Charter of the United Nations Regarding Military Interventions against Non-State Actors.",
