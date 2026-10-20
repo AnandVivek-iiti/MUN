@@ -455,12 +455,5 @@ export const secretariat = [
     instagram: null,
     linkedin: null,
   },
-  {
-    name: "Mandeep ",
-    image: "/members/Secratrist/mandeep.jpg",
-    team: "Creatives ",
-    position: "UDG",
-    instagram: null,
-    linkedin: null,
-  },
+  
 ];
