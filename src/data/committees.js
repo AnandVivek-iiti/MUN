@@ -15,7 +15,7 @@ export const committees = [
   {
     name: "United Nations Security Council (UNSC)",
     imageSrc: "/committees/UNSC.png",
-    chairperson: "Aditya Kiran",
+    chairperson: "Agamdeep Singh",
     viceChairperson: "Ayuj Ashween Menda",
     chairInstagram: "https://www.instagram.com/adityakiran17",
     viceInstagram: "https://www.instagram.com/ayuj_menda_17",
