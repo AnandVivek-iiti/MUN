@@ -364,15 +364,6 @@ export const secretariat = [
       "https://www.instagram.com/akv_abhijeet?igsh=MWE1MGltamdsYTY2Mw==",
     linkedin: "www.linkedin.com/in/abhijeet-kumar-verma-57469737a",
   },
-  {
-    name: "Chetna Mundra",
-    image: "/members/Secratrist/Chetna.png",
-    team: "Operations",
-    position: "USG",
-    instagram: null,
-    linkedin:
-      "https://www.linkedin.com/in/chetna-mundra-911515403?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
-  },
   
   {
     name: "Swastik Garg",
